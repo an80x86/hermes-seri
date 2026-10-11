@@ -1,0 +1,6 @@
+.env
+*.env
+.venv/
+__pycache__/
+cagri.log
+.DS_Store

@@ -1,0 +1,778 @@
+{
+ "anahtar_kelime": [
+  {
+   "id": "S01",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S02",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S03",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S04",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S05",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S06",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S07",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S08",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S09",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S10",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S11",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 1
+  },
+  {
+   "id": "S12",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 1
+  },
+  {
+   "id": "S13",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S14",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 1
+  },
+  {
+   "id": "S15",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S16",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 1
+  },
+  {
+   "id": "S17",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 1
+  },
+  {
+   "id": "S18",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 1
+  },
+  {
+   "id": "S19",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 1
+  },
+  {
+   "id": "S20",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 1
+  },
+  {
+   "id": "S21",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/maas-bantlari.md",
+   "ms": 1
+  },
+  {
+   "id": "S22",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/performans-degerlendirme.md",
+   "ms": 1
+  },
+  {
+   "id": "S23",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/2027-butce-taslagi.md",
+   "ms": 1
+  },
+  {
+   "id": "S24",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/yonetim-kurulu-notlari.md",
+   "ms": 1
+  }
+ ],
+ "minilm_ingilizce": [
+  {
+   "id": "S01",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 274
+  },
+  {
+   "id": "S02",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 7
+  },
+  {
+   "id": "S03",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 64
+  },
+  {
+   "id": "S04",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 30
+  },
+  {
+   "id": "S05",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 7
+  },
+  {
+   "id": "S06",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 7
+  },
+  {
+   "id": "S07",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 7
+  },
+  {
+   "id": "S08",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 7
+  },
+  {
+   "id": "S09",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 7
+  },
+  {
+   "id": "S10",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 6
+  },
+  {
+   "id": "S11",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 6
+  },
+  {
+   "id": "S12",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 32
+  },
+  {
+   "id": "S13",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 131
+  },
+  {
+   "id": "S14",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 7
+  },
+  {
+   "id": "S15",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 6
+  },
+  {
+   "id": "S16",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 6
+  },
+  {
+   "id": "S17",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 7
+  },
+  {
+   "id": "S18",
+   "tur": "ayni",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 7
+  },
+  {
+   "id": "S19",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 7
+  },
+  {
+   "id": "S20",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 7
+  },
+  {
+   "id": "S21",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/maas-bantlari.md",
+   "ms": 6
+  },
+  {
+   "id": "S22",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 6
+  },
+  {
+   "id": "S23",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 0,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 6
+  },
+  {
+   "id": "S24",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/yonetim-kurulu-notlari.md",
+   "ms": 7
+  }
+ ],
+ "e5_cok_dilli": [
+  {
+   "id": "S01",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 502
+  },
+  {
+   "id": "S02",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 24
+  },
+  {
+   "id": "S03",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 23
+  },
+  {
+   "id": "S04",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 23
+  },
+  {
+   "id": "S05",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 23
+  },
+  {
+   "id": "S06",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 23
+  },
+  {
+   "id": "S07",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 112
+  },
+  {
+   "id": "S08",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 24
+  },
+  {
+   "id": "S09",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 24
+  },
+  {
+   "id": "S10",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 23
+  },
+  {
+   "id": "S11",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 23
+  },
+  {
+   "id": "S12",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 118
+  },
+  {
+   "id": "S13",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 24
+  },
+  {
+   "id": "S14",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 24
+  },
+  {
+   "id": "S15",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 27
+  },
+  {
+   "id": "S16",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 25
+  },
+  {
+   "id": "S17",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 25
+  },
+  {
+   "id": "S18",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 24
+  },
+  {
+   "id": "S19",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 27
+  },
+  {
+   "id": "S20",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 24
+  },
+  {
+   "id": "S21",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/maas-bantlari.md",
+   "ms": 24
+  },
+  {
+   "id": "S22",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/performans-degerlendirme.md",
+   "ms": 23
+  },
+  {
+   "id": "S23",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/2027-butce-taslagi.md",
+   "ms": 23
+  },
+  {
+   "id": "S24",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/yonetim-kurulu-notlari.md",
+   "ms": 24
+  }
+ ],
+ "openai_small": [
+  {
+   "id": "S01",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 309
+  },
+  {
+   "id": "S02",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 157
+  },
+  {
+   "id": "S03",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 1241
+  },
+  {
+   "id": "S04",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "yonetim/2027-butce-taslagi.md",
+   "ms": 150
+  },
+  {
+   "id": "S05",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/izin-yonetmeligi.md",
+   "ms": 149
+  },
+  {
+   "id": "S06",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 159
+  },
+  {
+   "id": "S07",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 262
+  },
+  {
+   "id": "S08",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 155
+  },
+  {
+   "id": "S09",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/masraf-proseduru.md",
+   "ms": 172
+  },
+  {
+   "id": "S10",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 153
+  },
+  {
+   "id": "S11",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 148
+  },
+  {
+   "id": "S12",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 137
+  },
+  {
+   "id": "S13",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 220
+  },
+  {
+   "id": "S14",
+   "tur": "farkli",
+   "ilk1": 0,
+   "ilk3": 1,
+   "bulunan": "ortak/toplanti-kurallari.md",
+   "ms": 144
+  },
+  {
+   "id": "S15",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ortak/bilgi-guvenligi.md",
+   "ms": 168
+  },
+  {
+   "id": "S16",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 150
+  },
+  {
+   "id": "S17",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 153
+  },
+  {
+   "id": "S18",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/q3-satis-raporu.md",
+   "ms": 145
+  },
+  {
+   "id": "S19",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 159
+  },
+  {
+   "id": "S20",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "satis/iskonto-politikasi.md",
+   "ms": 160
+  },
+  {
+   "id": "S21",
+   "tur": "ayni",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/maas-bantlari.md",
+   "ms": 151
+  },
+  {
+   "id": "S22",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "ik/performans-degerlendirme.md",
+   "ms": 134
+  },
+  {
+   "id": "S23",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/2027-butce-taslagi.md",
+   "ms": 152
+  },
+  {
+   "id": "S24",
+   "tur": "farkli",
+   "ilk1": 1,
+   "ilk3": 1,
+   "bulunan": "yonetim/yonetim-kurulu-notlari.md",
+   "ms": 162
+  }
+ ]
+}

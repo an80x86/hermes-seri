@@ -1,0 +1,2 @@
+mcp==2.0.0
+sentence-transformers==6.1.0

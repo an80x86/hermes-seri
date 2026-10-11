@@ -1,0 +1,76 @@
+kosul,soru,tur,beklenen,dogru,api,takvim_cagri,takvim_girdi,sure,maliyet,cevap
+aracsiz,Q1_bugun10,1,2026-10-23,1,1,0,,14.5,0.000974,Bugünden (10 Ekim 2026) 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+aracsiz,Q2_tatil12,1,2026-11-03,1,1,0,,16.1,0.00122,"15 Ekim 2026’dan sonraki 12. iş günü, 29 Ekim Cumhuriyet Bayramı tatili dikkate alındığında 3 Kasım 2026 Salı günüdür. 29 Ekim tatili dikkate alınmazsa: 2 Kasım 2026 Pazartesi."
+aracsiz,Q3_bugun5,1,2026-10-16,1,1,0,,12.7,0.000893,5 iş günü sonrası: 16 Ekim 2026 Cuma.
+aracsiz,Q4_tatil3,1,2026-11-02,1,1,0,,17.3,0.00113,"Türkiye’deki iş günleri ve 29 Ekim Cumhuriyet Bayramı tatili dikkate alınırsa, 27 Ekim 2026’dan 3 iş günü sonrası: 2 Kasım 2026 Pazartesi."
+aracsiz,Q5_bugun15,1,2026-11-02,1,1,0,,13.3,0.001074,Bugün 10 Ekim 2026 Cumartesi. Hafta sonları hariç 15 iş günü sonrası 30 Ekim 2026 Cuma’dır. 29 Ekim Cumhuriyet Bayramı’nı tatil olarak dahil edersek: 2 Kasım 2026 Pazartesi.
+aracsiz,Q1_bugun10,2,2026-10-23,1,3,0,,17.1,0.001286,Bugün 10 Ekim 2026 Cumartesi. 10 iş günü sonrası 23 Ekim 2026 Cuma’dır.
+aracsiz,Q2_tatil12,2,2026-11-03,1,1,0,,16.6,0.001219,Türkiye’deki resmi tatiller (29 Ekim) hariç tutulup 15 Ekim sayılmadan hesaplanırsa: 3 Kasım 2026 Salı.
+aracsiz,Q3_bugun5,2,2026-10-16,1,1,0,,14.6,0.000986,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+aracsiz,Q4_tatil3,2,2026-11-02,0,1,0,,12.7,0.000933,27 Ekim 2026’dan 3 iş günü sonrası: 30 Ekim 2026 Cuma.
+aracsiz,Q5_bugun15,2,2026-11-02,1,1,0,,15.6,0.001221,"Bugün 10 Ekim 2026 kabul edilirse, Türkiye’deki 29 Ekim resmi tatili de hesaba katıldığında 15 iş günü sonrası 2 Kasım 2026 Pazartesi’dir. Yalnızca hafta sonları hariç tutulursa: 30 Ekim 2026 Cuma."
+aracsiz,Q1_bugun10,3,2026-10-23,1,1,0,,13.7,0.000956,"Bugün 10 Ekim 2026 Cumartesi olduğuna göre, 10 iş günü sonrası 23 Ekim 2026 Cuma’dır."
+aracsiz,Q2_tatil12,3,2026-11-03,0,1,0,,15.1,0.00114,15 Ekim 2026’dan sonraki 12. iş günü: 2 Kasım 2026 Pazartesi. 15 Ekim’i 1. iş günü olarak sayarsanız: 30 Ekim 2026 Cuma.
+aracsiz,Q3_bugun5,3,2026-10-16,1,1,0,,12.7,0.000984,"Bugün 10 Ekim 2026 Cumartesi olduğuna göre, 5 iş günü sonrası 16 Ekim 2026 Cuma’dır."
+aracsiz,Q4_tatil3,3,2026-11-02,1,1,0,,13.9,0.001027,Türkiye takvimine göre 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir. 29 Ekim Cumhuriyet Bayramı tatil olduğu için hesaba katılmaz.
+aracsiz,Q5_bugun15,3,2026-11-02,1,1,0,,15.5,0.001063,"Türkiye’deki resmi tatiller hesaba katılırsa, bugünden 15 iş günü sonrası 2 Kasım 2026 Pazartesi’dir."
+aracsiz,Q1_bugun10,4,2026-10-23,1,1,0,,13.7,0.001013,Bugünden (10 Ekim 2026 Cumartesi) 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+aracsiz,Q2_tatil12,4,2026-11-03,1,1,0,,13.6,0.001143,"15 Ekim 2026’yı hariç tutup Türkiye’deki resmî tatilleri de hesaba katarsak, 12 iş günü sonrası 3 Kasım 2026 Salı günüdür. Yalnızca hafta içi günleri sayılırsa: 2 Kasım 2026 Pazartesi."
+aracsiz,Q3_bugun5,4,2026-10-16,1,1,0,,12.6,0.000991,"Bugün 10 Ekim 2026 Cumartesi olduğuna göre, 5 iş günü sonrası 16 Ekim 2026 Cuma’dır. (Resmî tatiller hariç.)"
+aracsiz,Q4_tatil3,4,2026-11-02,0,1,0,,16.3,0.001112,27 Ekim 2026 Salı’dan sonraki 3 iş günü: 30 Ekim 2026 Cuma.
+aracsiz,Q5_bugun15,4,2026-11-02,1,1,0,,13.6,0.001159,Bugün 10 Ekim 2026. Hafta sonları ve 29 Ekim Cumhuriyet Bayramı hariç 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+aracsiz,Q1_bugun10,5,2026-10-23,1,1,0,,12.2,0.000945,Bugün 10 Ekim 2026 Cumartesi. 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+aracsiz,Q2_tatil12,5,2026-11-03,1,1,0,,14.2,0.001156,"15 Ekim 2026’dan sonraki 12. iş günü, 29 Ekim Cumhuriyet Bayramı tatili hesaba katıldığında 3 Kasım 2026 Salı’dır."
+aracsiz,Q3_bugun5,5,2026-10-16,1,1,0,,12.4,0.000944,5 iş günü sonrası: 16 Ekim 2026 Cuma.
+aracsiz,Q4_tatil3,5,2026-11-02,1,1,0,,12.0,0.001057,"Türkiye’deki resmî tatiller dikkate alınırsa, 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir."
+aracsiz,Q5_bugun15,5,2026-11-02,0,1,0,,12.7,0.001047,Bugünden (10 Ekim 2026) 15 iş günü sonrası: 30 Ekim 2026 Cuma. Hafta sonları ve resmî tatiller hariç hesaplanmıştır.
+varsayilan,Q1_bugun10,1,2026-10-23,1,3,0,,17.7,0.004124,Bugünden (10 Ekim 2026 Cumartesi) 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+varsayilan,Q2_tatil12,1,2026-11-03,0,3,0,,16.9,0.004118,"15 Ekim 2026’dan sonraki 12. iş günü, hafta sonları hariç ve resmî tatiller hesaba katılmadan, 2 Kasım 2026 Pazartesi’dir."
+varsayilan,Q3_bugun5,1,2026-10-16,1,3,0,,16.8,0.0041,Bugünden 5 iş günü sonrası 16 Ekim 2026 Cuma.
+varsayilan,Q4_tatil3,1,2026-11-02,1,3,0,,19.2,0.00429,"Türkiye’deki 29 Ekim Cumhuriyet Bayramı tatili hesaba katılırsa, 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir."
+varsayilan,Q5_bugun15,1,2026-11-02,0,3,0,,17.3,0.004126,Bugünden 15 iş günü sonrası 30 Ekim 2026 Cuma günüdür.
+varsayilan,Q1_bugun10,2,2026-10-23,1,3,0,,16.8,0.00409,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+varsayilan,Q2_tatil12,2,2026-11-03,1,3,0,,19.4,0.00422,"15 Ekim 2026’dan sonraki 12 iş günü, 29 Ekim Cumhuriyet Bayramı tatili dikkate alındığında 3 Kasım 2026 Salı günüdür."
+varsayilan,Q3_bugun5,2,2026-10-16,1,4,0,,22.5,0.004602,Bugün 10 Ekim 2026 Cumartesi. 5 iş günü sonrası 16 Ekim 2026 Cuma’dır.
+varsayilan,Q4_tatil3,2,2026-11-02,1,3,0,,21.7,0.004295,"Türkiye’deki resmî tatiller dikkate alınırsa, 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir. Sayım: 28 Ekim (1), 30 Ekim (2), 2 Kasım (3). 29 Ekim Cumhuriyet Bayramı’dır."
+varsayilan,Q5_bugun15,2,2026-11-02,1,3,0,,20.6,0.004464,"Bugünden (10 Ekim 2026) 15 iş günü sonrası, 29 Ekim Cumhuriyet Bayramı da hesaba katıldığında 2 Kasım 2026 Pazartesi’dir."
+varsayilan,Q1_bugun10,3,2026-10-23,1,3,0,,19.5,0.004109,Bugünden (10 Ekim 2026 Cumartesi) 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+varsayilan,Q2_tatil12,3,2026-11-03,0,3,0,,16.8,0.004171,15 Ekim 2026’dan itibaren 12 iş günü sonrası 2 Kasım 2026 Pazartesi günüdür.
+varsayilan,Q3_bugun5,3,2026-10-16,1,5,0,,20.5,0.004795,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+varsayilan,Q4_tatil3,3,2026-11-02,1,4,0,,18.8,0.004811,"Türkiye’de 29 Ekim Cumhuriyet Bayramı resmî tatil kabul edilirse, 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir."
+varsayilan,Q5_bugun15,3,2026-11-02,0,3,0,,19.8,0.004095,Bugünden (10 Ekim 2026 Cumartesi) 15 iş günü sonrası: 30 Ekim 2026 Cuma.
+varsayilan,Q1_bugun10,4,2026-10-23,1,5,0,,21.3,0.005009,Bugün 10 Ekim 2026 Cumartesi. 10 iş günü sonrası 23 Ekim 2026 Cuma.
+varsayilan,Q2_tatil12,4,2026-11-03,1,3,0,,17.8,0.004377,"Türkiye’deki resmî tatilleri de hesaba katarsak, 15 Ekim 2026’dan sonraki 12. iş günü 3 Kasım 2026 Salı’dır. Yalnızca hafta sonlarını hariç tutarsak: 2 Kasım 2026 Pazartesi."
+varsayilan,Q3_bugun5,4,2026-10-16,1,3,0,,16.6,0.004,Bugün 10 Ekim 2026 Cumartesi. 5 iş günü sonrası 16 Ekim 2026 Cuma.
+varsayilan,Q4_tatil3,4,2026-11-02,1,4,0,,20.6,0.004935,"Türkiye’deki resmi tatiller dikkate alınırsa, 27 Ekim 2026’dan 3 iş günü sonrası 2 Kasım 2026 Pazartesi’dir. 29 Ekim Cumhuriyet Bayramı resmi tatildir."
+varsayilan,Q5_bugun15,4,2026-11-02,0,3,0,,15.5,0.004057,Bugünden 15 iş günü sonrası: 30 Ekim 2026 Cuma.
+varsayilan,Q1_bugun10,5,2026-10-23,1,4,0,,19.1,0.004605,Bugünden (10 Ekim 2026 Cumartesi) 10 iş günü sonrası 23 Ekim 2026 Cuma’dır.
+varsayilan,Q2_tatil12,5,2026-11-03,0,3,0,,16.0,0.004056,15 Ekim 2026’dan sonraki 12. iş günü 2 Kasım 2026 Pazartesi’dir.
+varsayilan,Q3_bugun5,5,2026-10-16,1,3,0,,15.5,0.003992,Bugünden (10 Ekim 2026 Cumartesi) 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+varsayilan,Q4_tatil3,5,2026-11-02,0,4,0,,20.6,0.004558,27 Ekim 2026’dan 3 iş günü sonrası 30 Ekim 2026 Cuma günüdür.
+varsayilan,Q5_bugun15,5,2026-11-02,0,2,0,,13.9,0.003681,Bugünden (10 Ekim 2026) 15 iş günü sonrası: 30 Ekim 2026 Cuma.
+takvim,Q1_bugun10,1,2026-10-23,1,3,1,bugun+10,16.0,0.0011,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+takvim,Q2_tatil12,1,2026-11-03,1,3,1,2026-10-15+12,16.3,0.00117,15 Ekim 2026’dan 12 iş günü sonrası: 3 Kasım 2026 Salı.
+takvim,Q3_bugun5,1,2026-10-16,1,3,1,bugun+5,15.4,0.001149,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+takvim,Q4_tatil3,1,2026-11-02,1,4,1,2026-10-27+3,17.9,0.001249,27 Ekim 2026’dan itibaren 3 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q5_bugun15,1,2026-11-02,1,3,1,bugun+15,16.4,0.001117,Bugünden 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q1_bugun10,2,2026-10-23,1,3,1,bugun+10,15.3,0.001119,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+takvim,Q2_tatil12,2,2026-11-03,1,3,1,2026-10-15+12,15.6,0.001158,15 Ekim 2026’dan 12 iş günü sonrası: 3 Kasım 2026 Salı.
+takvim,Q3_bugun5,2,2026-10-16,1,3,1,bugun+5,15.9,0.001122,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+takvim,Q4_tatil3,2,2026-11-02,1,3,1,2026-10-27+3,17.2,0.001155,27 Ekim 2026’dan 3 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q5_bugun15,2,2026-11-02,1,4,1,bugun+15,18.3,0.001284,Bugünden 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q1_bugun10,3,2026-10-23,1,4,1,bugun+10,21.2,0.001262,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+takvim,Q2_tatil12,3,2026-11-03,1,3,1,2026-10-15+12,18.6,0.001161,15 Ekim 2026’dan 12 iş günü sonrası: 3 Kasım 2026 Salı.
+takvim,Q3_bugun5,3,2026-10-16,1,3,1,bugun+5,18.1,0.001107,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+takvim,Q4_tatil3,3,2026-11-02,1,3,1,2026-10-27+3,17.8,0.001131,27 Ekim 2026’dan 3 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q5_bugun15,3,2026-11-02,1,3,1,bugun+15,14.9,0.001153,Bugünden 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q1_bugun10,4,2026-10-23,1,3,1,bugun+10,16.5,0.001109,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+takvim,Q2_tatil12,4,2026-11-03,1,3,1,2026-10-15+12,16.4,0.001125,15 Ekim 2026’dan 12 iş günü sonrası: 3 Kasım 2026 Salı.
+takvim,Q3_bugun5,4,2026-10-16,1,3,1,bugun+5,16.0,0.001103,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+takvim,Q4_tatil3,4,2026-11-02,1,3,1,2026-10-27+3,15.6,0.001125,27 Ekim 2026’dan 3 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q5_bugun15,4,2026-11-02,1,3,1,bugun+15,14.7,0.001113,Bugünden 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q1_bugun10,5,2026-10-23,1,3,1,bugun+10,14.7,0.001113,Bugünden 10 iş günü sonrası: 23 Ekim 2026 Cuma.
+takvim,Q2_tatil12,5,2026-11-03,1,3,1,2026-10-15+12,14.9,0.001175,15 Ekim 2026’dan 12 iş günü sonrası: 3 Kasım 2026 Salı.
+takvim,Q3_bugun5,5,2026-10-16,1,3,1,bugun+5,14.5,0.001113,Bugünden 5 iş günü sonrası: 16 Ekim 2026 Cuma.
+takvim,Q4_tatil3,5,2026-11-02,1,3,1,2026-10-27+3,14.6,0.00112,27 Ekim 2026’dan 3 iş günü sonrası: 2 Kasım 2026 Pazartesi.
+takvim,Q5_bugun15,5,2026-11-02,1,3,1,bugun+15,16.0,0.001119,Bugünden 15 iş günü sonrası: 2 Kasım 2026 Pazartesi.

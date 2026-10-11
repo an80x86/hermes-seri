@@ -1,0 +1,37 @@
+{
+  "_aciklama": "Arama ve agent olcumu soru seti. 'dosya': dogru dokuman (rol klasoru/dosya). 'tur': 'ayni' = dokumandaki kelimelerle, 'farkli' = es anlamli / farkli kelimelerle. 'beklenen': cevapta gecmesi gereken ifade(ler), regex. 'yok' sorularinin cevabi dokumanlarda yok.",
+  "var": [
+    {"id": "S01", "soru": "Yıllık izin hakkım kaç gün? 3 yıldır çalışıyorum.", "dosya": "ortak/izin-yonetmeligi.md", "tur": "ayni", "beklenen": "\\b16\\b"},
+    {"id": "S02", "soru": "Şirkette 8 yılı dolduran biri yılda kaç gün tatil yapabilir?", "dosya": "ortak/izin-yonetmeligi.md", "tur": "farkli", "beklenen": "\\b22\\b"},
+    {"id": "S03", "soru": "Evlenince kaç gün izin veriliyor?", "dosya": "ortak/izin-yonetmeligi.md", "tur": "farkli", "beklenen": "\\b5\\b"},
+    {"id": "S04", "soru": "Yeni eve geçerken bir gün boş alabilir miyim?", "dosya": "ortak/izin-yonetmeligi.md", "tur": "farkli", "beklenen": "\\b1\\b|bir gün"},
+    {"id": "S05", "soru": "İzin talebini en geç ne zaman girmem gerekiyor?", "dosya": "ortak/izin-yonetmeligi.md", "tur": "ayni", "beklenen": "10 iş gün"},
+    {"id": "S06", "soru": "Masraf formunu en geç ne zaman teslim etmeliyim?", "dosya": "ortak/masraf-proseduru.md", "tur": "ayni", "beklenen": "10 iş gün"},
+    {"id": "S07", "soru": "Ankara'ya iş için gidersem günlük yol parası ne kadar?", "dosya": "ortak/masraf-proseduru.md", "tur": "farkli", "beklenen": "1\\.?250"},
+    {"id": "S08", "soru": "Kendi arabamla müşteriye gidersem kilometre başına ne alırım?", "dosya": "ortak/masraf-proseduru.md", "tur": "ayni", "beklenen": "\\b9 TL|9 lira"},
+    {"id": "S09", "soru": "7 bin liralık bir harcamayı kim onaylıyor?", "dosya": "ortak/masraf-proseduru.md", "tur": "farkli", "beklenen": "finans direktör"},
+    {"id": "S10", "soru": "Fişi kaybettim, parayı geri alabilir miyim?", "dosya": "ortak/masraf-proseduru.md", "tur": "farkli", "beklenen": "ödenmez|alamazs|mümkün değil|geri ödenm"},
+    {"id": "S11", "soru": "Haftalık ekip toplantısı ne zaman yapılıyor?", "dosya": "ortak/toplanti-kurallari.md", "tur": "ayni", "beklenen": "Pazartesi.*10:00|10:00.*Pazartesi"},
+    {"id": "S12", "soru": "Müşteriyle görüştükten sonra notları nereye ve ne kadar sürede yazmalıyım?", "dosya": "ortak/toplanti-kurallari.md", "tur": "farkli", "beklenen": "24 saat"},
+    {"id": "S13", "soru": "Parolam en az kaç haneli olmalı?", "dosya": "ortak/bilgi-guvenligi.md", "tur": "farkli", "beklenen": "\\b14\\b"},
+    {"id": "S14", "soru": "Müşteri fiyatlarını ChatGPT'ye yazabilir miyim?", "dosya": "ortak/bilgi-guvenligi.md", "tur": "farkli", "beklenen": "girilmez|yazamaz|hayır|Hayır|yasak|olmaz"},
+    {"id": "S15", "soru": "Laptopumu kaybettim, kime ne kadar sürede haber vermeliyim?", "dosya": "ortak/bilgi-guvenligi.md", "tur": "farkli", "beklenen": "2 saat"},
+    {"id": "S16", "soru": "Q3 müşteri memnuniyeti hedefimiz nedir?", "dosya": "satis/q3-satis-raporu.md", "tur": "ayni", "beklenen": "%\\s?90|yüzde 90|90\\s?%"},
+    {"id": "S17", "soru": "Üçüncü çeyrekte ne kadar sattık?", "dosya": "satis/q3-satis-raporu.md", "tur": "farkli", "beklenen": "48,6|48\\.6"},
+    {"id": "S18", "soru": "Müşteriler en çok neden şikâyet etti?", "dosya": "satis/q3-satis-raporu.md", "tur": "ayni", "beklenen": "teslimat"},
+    {"id": "S19", "soru": "Bir müşteriye kendi yetkimle en fazla ne kadar indirim yapabilirim?", "dosya": "satis/iskonto-politikasi.md", "tur": "farkli", "beklenen": "%\\s?5\\b|yüzde 5\\b"},
+    {"id": "S20", "soru": "Müşteri 60 gün vade isterse ne yapmalıyım?", "dosya": "satis/iskonto-politikasi.md", "tur": "ayni", "beklenen": "finans onay"},
+    {"id": "S21", "soru": "Satış temsilcisinin maaş aralığı nedir?", "dosya": "ik/maas-bantlari.md", "tur": "ayni", "beklenen": "62\\.?000"},
+    {"id": "S22", "soru": "Performans notu düşük çıkarsa ne olur?", "dosya": "ik/performans-degerlendirme.md", "tur": "farkli", "beklenen": "gelişim plan"},
+    {"id": "S23", "soru": "Gelecek yılın ciro hedefi ne?", "dosya": "yonetim/2027-butce-taslagi.md", "tur": "farkli", "beklenen": "215"},
+    {"id": "S24", "soru": "İzmir'de yeni bir ofis açılıyor mu?", "dosya": "yonetim/yonetim-kurulu-notlari.md", "tur": "farkli", "beklenen": "2027|Ocak"}
+  ],
+  "yok": [
+    {"id": "Y01", "soru": "Doğum izni kaç hafta?"},
+    {"id": "Y02", "soru": "Yemek kartına ayda ne kadar yükleniyor?"},
+    {"id": "Y03", "soru": "Uzaktan çalışma kaç gün mümkün?"},
+    {"id": "Y04", "soru": "Q4 satış hedefimiz nedir?"},
+    {"id": "Y05", "soru": "Fazla mesai ücreti nasıl hesaplanıyor?"},
+    {"id": "Y06", "soru": "Şirket telefonu hangi pozisyonlara veriliyor?"}
+  ]
+}

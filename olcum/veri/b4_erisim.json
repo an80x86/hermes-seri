@@ -1,0 +1,73 @@
+[
+ {
+  "duzen": "allowlist",
+  "tekrar": 0,
+  "cevap": []
+ },
+ {
+  "duzen": "allowlist",
+  "tekrar": 1,
+  "cevap": []
+ },
+ {
+  "duzen": "allowlist",
+  "tekrar": 2,
+  "cevap": [],
+  "arac_maliyet": [
+   [],
+   0.0
+  ]
+ },
+ {
+  "duzen": "bos",
+  "tekrar": 0,
+  "cevap": [
+   "Hi\\! I don't recognize you yet, so I can't reply until the person running this bot approves you\\.\n\nYour pairing code: `YPHUSKW7` \\(valid for 1 hour\\)\n\nIf you run this bot, open a terminal and run: `hermes pairing approve telegram YPHUSKW7`\\. Otherwise send that command to the bot owner\\. After approval, send your message again\\."
+  ]
+ },
+ {
+  "duzen": "bos",
+  "tekrar": 1,
+  "cevap": []
+ },
+ {
+  "duzen": "bos",
+  "tekrar": 2,
+  "cevap": [],
+  "arac_maliyet": [
+   [],
+   0.0
+  ]
+ },
+ {
+  "duzen": "herkes",
+  "tekrar": 0,
+  "cevap": [
+   "Merhaba\\! `/help` komutları gösterir\\.\n\nŞirketin *2027 ciro hedefi 215 milyon TL* olarak belirtilmiş\\. Kaynak: `yonetim/2027-butce-taslagi.md`\\.\n\nİstersen sana daha faydalı olabilmem için kısa bir profil oluşturabilirim \\(adın, ne yaptığın ve nasıl çalışmamı istediğin gibi\\); istemezsen reddedebilir veya daha sonra yapabiliriz\\."
+  ]
+ },
+ {
+  "duzen": "herkes",
+  "tekrar": 1,
+  "cevap": [
+   "Şirketin *2027 ciro hedefi 215 milyon TL*\\.  \nKaynak: `yonetim/2027-butce-taslagi.md` → *Hedefler*\\."
+  ]
+ },
+ {
+  "duzen": "herkes",
+  "tekrar": 2,
+  "cevap": [
+   "Şirketin *2027 ciro hedefi 215 milyon TL*\\.  \nKaynak: `yonetim/2027-butce-taslagi.md` → *Hedefler*\\."
+  ],
+  "arac_maliyet": [
+   [
+    "tool_search:{\"queries\":[\"company documents search 2027 revenue target\"],\"limit\":5}",
+    "tool_describe:{\"names\":[\"mcp__dokuman__dokuman_ara\"]}",
+    "tool_call:{\"calls\":[{\"name\":\"mcp__dokuman__dokuman_ara\",\"arguments\":{\"sorgu\":\"2027 ciro hedefi şirketin 2027 yılı gelir cirosu hedefi\"}}]}",
+    "tool_call:{\"calls\":[{\"name\":\"mcp__dokuman__dokuman_ara\",\"arguments\":{\"sorgu\":\"2027 ciro hedefi şirket bütçe hedefler\"}}]}",
+    "tool_call:{\"calls\":[{\"arguments\":{\"sorgu\":\"2027 ciro hedefi 215 milyon TL\"},\"name\":\"mcp__dokuman__dokuman_ara\"}]}"
+   ],
+   0.006683
+  ]
+ }
+]
