@@ -1,6 +1,6 @@
 # Hermes Agent Serisi: kodlar ve ölçümler
 
-YouTube'daki 4 bölümlük **Hermes Agent** serisinin kodları. Seride gerçek
+YouTube'daki **Hermes Agent** serisinin kodları. Seride gerçek
 [NousResearch Hermes Agent](https://github.com/NousResearch/hermes-agent) (v0.21.6, resmî Docker imajı)
 ve `gpt-5.6-luna` modeliyle şirket içi bir asistan kuruluyor. Her adım ölçülüyor.
 
@@ -10,8 +10,9 @@ ve `gpt-5.6-luna` modeliyle şirket içi bir asistan kuruluyor. Her adım ölç�
 | 2. Araçlar ve hafıza | [Kendi Aracını Yaz, Hafızayı Ölç](https://youtu.be/nVjnPzj4pUk) | `bolum2/` |
 | 3. Doküman asistanı | [Şirket Dokümanı Asistanı, 8/48'den 48/48'e](https://youtu.be/cG9aiFS37x8) | `bolum3/` |
 | 4. Telegram'da canlı | [Telegram'dan "Sil" Dedim, Onay Sormadı](https://youtu.be/lopXOY_Vqvk) | `bolum4/` |
+| 5. Kendi MCP sunucun | [Agent'a SQL Verdim, Faturaları Kendi Kapattı](https://youtu.be/Guu4fbOyc7I) | `h5/` |
 
-Videolardaki bütün sayılar `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe.
+1-4. bölümlerin sayıları `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe. 5. bölümün sonuçları `h5/SONUC.md`, ham veriler `h5/veri/`.
 
 ## Klasörler
 
@@ -26,6 +27,11 @@ bolum3/  dokuman_mcp.py      61 satırlık doküman aracı: rol filtreli anlamsa
 bolum4/  canli_kurulum.sh    Hermes'i Telegram botu olarak canlıya alma
          kural.md            SOUL dosyasına eklenen kural (3. bölümdeki + gizli talimat satırı)
          dokuman_mcp_enjeksiyon.py, dokumanlar/   Masraf dokümanına gizli talimat eklenmiş kopya (test için)
+h5/      erp_sunucu.py       ERP MCP sunucusu, dört araç tasarımı: sql, sql_ro, zayif, iyi
+         erp_veri.py         Ortak iş mantığı (müşteri arama, bakiye, fatura listesi, çağrı kaydı)
+         canli_soru.py       Hermes'e tek soru sorar, sunucunun gördüğü araç çağrılarını canlı yazar
+         veri_uret.py, soru_uret.py   Örnek veritabanı (40 müşteri, 326 fatura) ve 20 soru + beklenen cevaplar
+         olc.py, ozet.py     Ölçüm ve özet (elle_duzeltme.json: elle okunup düzeltilen 11 puan)
 olcum/   *_olc.py            Ölçüm betikleri (her bölüm için)
          sahte_telegram.py   Ölçümde kullanılan sahte Telegram Bot API sunucusu
          b4_vekil.py         Hermes'e sahte anahtar verip gerçeğini yalnızca vekilde tutan vekil
@@ -51,6 +57,26 @@ mcp_servers:
 
 Sonra kuralı (`bolum4/kural.md`) Hermes'in SOUL dosyasının sonuna ekleyin.
 Jetonlar örnek değerlerdir; gerçek kullanımda kendi rastgele değerlerinizi koyun.
+
+## MCP sunucusunu çalıştırmak (5. bölüm)
+
+```sh
+cd h5
+python3 veri_uret.py && python3 soru_uret.py     # sirket.db + sorular.json
+pip install mcp                                  # Python MCP SDK 2.0
+python3 erp_sunucu.py iyi 8013                   # 127.0.0.1:8013; düzenler: sql 8011, zayif 8012, sql_ro 8014
+```
+
+Hermes'in `config.yaml` dosyasına:
+
+```yaml
+mcp_servers:
+  erp:
+    url: http://host.docker.internal:8013/mcp
+```
+
+Sonra `-t erp` ile yalnızca bu araç setini açın (`python3 canli_soru.py`). Veritabanındaki isimler ve numaralar uydurmadır;
+yayımlanan ham verilerde telefon numaraları ayrıca maskelendi.
 
 ## Bilmeniz gerekenler
 

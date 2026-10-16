@@ -1,0 +1,327 @@
+duzen,id,tur,dogru,arac_dogru,cagri_sayisi,araclar,hata,sure,maliyet,girdi_token,cevap,girdiler
+sql_ro,B1,1,1,,1,sql_calistir,0,18.4,0.001487,11208,"Kaya İnşaat’ın açık bakiyesi 496.324,25 TL. Bu tutar 3 ödenmemiş faturadan oluşuyor.","[{""sorgu"": ""SELECT m.id, m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS acik_bakiye_tl, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Kaya İnşaat%' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B2,1,1,,1,sql_calistir,0,15.6,0.00137,11038,"Demir Lojistik’in vadesi geçmiş ve ödenmemiş borcu 598.313,75 TL.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(f.tutar), 0) AS vadesi_gecmis_borc_tl FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Demir Lojistik' AND f.odendi = 0 AND f.vade < '2026-10-16' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B3,1,1,,1,sql_calistir,0,19.0,0.001732,14525,"Ekin Un’un toplam borcu 517.447,75 TL.
+Bunun 378.065,00 TL’si gecikmiş.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS toplam_borc_tl, COALESCE(SUM(CASE WHEN f.odendi = 0 AND f.vade < '2026-10-16' THEN f.tutar ELSE 0 END), 0) AS gecikmis_borc_tl FROM musteriler AS m LEFT JOIN faturalar AS f ON f.musteri_id = m.id WHERE m.unvan = 'Ekin Un' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B4,1,0,,3,sql_calistir sql_calistir sql_calistir,0,21.0,0.002097,18732,"Hayır. 16 Ekim 2026 itibarıyla Marmara Plastik’in gecikmiş borcu görünmüyor.
+Ödenmemiş faturası:
+- FTR-2026-0047: 100.642,25 TL
+- Vade: 27 Ekim 2026
+Bu fatura henüz vadesi gelmediği için gecikmiş sayılmıyor.","[{""sorgu"": ""SELECT m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Marmara Plastik%' AND f.odendi = 0 AND f.vade < '2026-10-16' ORDER BY f.vade;""}, {""sorgu"": ""SELECT id, unvan FROM musteriler WHERE unvan LIKE '%Marmara%' OR unvan LIKE '%Plastik%';""}, {""sorgu"": ""SELECT no, tarih, vade, tutar, odendi, CASE WHEN odendi = 0 AND vade < '2026-10-16' THEN 1 ELSE 0 END AS gecikmis FROM faturalar WHERE musteri_id = 5 ORDER BY vade;""}]"
+sql_ro,B5,1,1,,1,sql_calistir,0,16.6,0.001358,11042,"Hisar Cam’ın açık bakiyesi: 477.034,50 TL
+Açık fatura sayısı: 4","[{""sorgu"": ""SELECT m.unvan, SUM(f.tutar) AS acik_bakiye_tl, COUNT(f.no) AS acik_fatura_sayisi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Hisar Cam%' AND f.odendi = 0 GROUP BY m.id, m.unvan;""}]"
+sql_ro,B6,1,1,,2,sql_calistir sql_calistir,0,22.3,0.002094,15022,"Cevher Madencilik’ten toplam 759.525,50 TL alacağımız var.
+- Ödenmemiş fatura: 4 adet
+- Vadesi geçmiş: 540.937,75 TL (3 fatura)
+- Vadesi geçmemiş: 218.587,75 TL","[{""sorgu"": ""SELECT m.unvan, COUNT(f.no) AS fatura_sayisi, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS toplam_alacak, COALESCE(SUM(CASE WHEN f.odendi = 0 AND f.vade < date('now') THEN f.tutar ELSE 0 END), 0) AS vadesi_gecmis_alacak FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Cevher Madencilik%' GROUP BY m.id, m.unvan;""}, {""sorgu"": ""SELECT COUNT(*) AS odenmemis_fatura_sayisi, COALESCE(SUM(f.tutar), 0) AS toplam_odenmemis, SUM(CASE WHEN f.vade < date('now') THEN 1 ELSE 0 END) AS vadesi_gecmis_fatura_sayisi, COALESCE(SUM(CASE WHEN f.vade < date('now') THEN f.tutar ELSE 0 END), 0) AS toplam_vadesi_gecmis FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Cevher Madencilik' AND f.odendi = 0;""}]"
+sql_ro,F1,1,1,,2,sql_calistir sql_calistir,0,19.7,0.001862,14902,"Ege Gıda’nın ödenmemiş faturaları:
+- FTR-2026-0033 — Tarih: 21.07.2026 — Vade: 04.09.2026 — 110.725,50 TL
+- FTR-2026-0032 — Tarih: 11.08.2026 — Vade: 10.10.2026 — 158.901,75 TL
+Toplam: 2 fatura, 269.627,25 TL","[{""sorgu"": ""SELECT f.no AS fatura_no, m.unvan AS musteri, f.tarih, f.vade, f.tutar FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Ege Gıda' AND f.odendi = 0 ORDER BY f.vade, f.no;""}, {""sorgu"": ""SELECT COUNT(*) AS fatura_sayisi, SUM(f.tutar) AS toplam_tutar FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Ege Gıda' AND f.odendi = 0;""}]"
+sql_ro,F2,1,1,,1,sql_calistir,0,17.7,0.001391,11107,"Toros Enerji’ye Mart 2026’da 3 fatura kesilmiş. Toplam tutar: 584.618,50 TL.","[{""sorgu"": ""SELECT m.unvan, COUNT(*) AS fatura_sayisi, SUM(f.tutar) AS toplam_tutar_tl FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Toros Enerji' AND f.tarih >= '2026-03-01' AND f.tarih < '2026-04-01' GROUP BY m.unvan;""}]"
+sql_ro,F3,1,1,,1,sql_calistir,0,16.9,0.001398,11124,"Zirve Mimarlık’a en son kesilen fatura:
+Fatura no: FTR-2026-0247
+Tarih: 6 Ekim 2026
+Tutar: 133.460 TL","[{""sorgu"": ""SELECT f.no, f.tarih, f.tutar, m.unvan FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan LIKE '%Zirve Mimarlık%' ORDER BY f.tarih DESC, f.no DESC LIMIT 1;""}]"
+sql_ro,F4,1,1,,1,sql_calistir,0,16.7,0.001349,11004,"Doruk Plastik’in vadesi geçmiş faturaları:
+- FTR-2026-0286
+- FTR-2026-0292","[{""sorgu"": ""SELECT f.no FROM faturalar AS f JOIN musteriler AS m ON m.id = f.musteri_id WHERE m.unvan = 'Doruk Plastik' AND f.odendi = 0 AND f.vade < '2026-10-16' ORDER BY f.vade, f.no;""}]"
+sql_ro,F5,1,1,,1,sql_calistir,0,16.2,0.001388,11093,2026’nın ilk çeyreğinde Umut Yazılım’a toplam 342.624 TL tutarında 2 fatura kestik.,"[{""sorgu"": ""SELECT m.unvan, SUM(f.tutar) AS toplam_tl, COUNT(*) AS fatura_sayisi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Umut Yazılım' AND f.tarih >= '2026-01-01' AND f.tarih < '2026-04-01' GROUP BY m.unvan;""}]"
+sql_ro,F6,1,1,,1,sql_calistir,0,15.4,0.001322,11264,"Nehir Su’nun en yüksek tutarlı faturası:
+Fatura no: FTR-2026-0197
+Tarih: 15.09.2026
+Tutar: 236.410 TL
+Durum: Ödendi","[{""sorgu"": ""SELECT f.no AS fatura_no, m.unvan, f.tarih, f.tutar, f.odendi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Nehir Su' ORDER BY f.tutar DESC LIMIT 1;""}]"
+sql_ro,M1,1,1,,1,sql_calistir,0,16.0,0.001399,11256,"Bursa’daki müşterilerimiz:
+- Gökay Metal — Temsilci: Elif Şahin
+- Lale Tekstil — Temsilci: Elif Şahin
+- Marmara Plastik — Temsilci: Murat Koç
+- Özkan Otomotiv — Temsilci: Elif Şahin","[{""sorgu"": ""SELECT id, unvan, sehir, vergi_no, telefon, temsilci FROM musteriler WHERE sehir = 'Bursa' ORDER BY unvan;""}]"
+sql_ro,M2,1,1,,1,sql_calistir,0,16.9,0.001247,11007,Kuzey Ambalaj’ın müşteri temsilcisi Can Yılmaz.,"[{""sorgu"": ""SELECT unvan, temsilci FROM musteriler WHERE unvan LIKE '%Kuzey Ambalaj%';""}]"
+sql_ro,M3,1,1,,1,sql_calistir,0,15.4,0.001314,11233,"İzmir’de açık bakiyesi en yüksek müşteri Berk Elektronik’tir: 416.815,25 TL.","[{""sorgu"": ""SELECT m.unvan, m.sehir, ROUND(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 2) AS acik_bakiye FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.sehir = 'İzmir' GROUP BY m.id, m.unvan, m.sehir ORDER BY acik_bakiye DESC LIMIT 1;""}]"
+sql_ro,M4,1,1,,1,sql_calistir,0,16.4,0.001317,11108,"Evet. Selin Aydın’ın Konya’daki müşterisi:
+- Ekin Un","[{""sorgu"": ""SELECT id, unvan, sehir, temsilci FROM musteriler WHERE temsilci = 'Selin Aydın' AND sehir = 'Konya' ORDER BY unvan;""}]"
+sql_ro,A1,1,1,,1,sql_calistir,0,18.3,0.001526,11107,"Yıldız Makine’nin açık bakiyesi 221.581 TL’dir (2 ödenmemiş fatura).
+Yıldız Tekstil’in açık bakiyesi 0 TL’dir.","[{""sorgu"": ""SELECT m.id, m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS acik_bakiye, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Yıldız%' OR m.unvan LIKE '%Yildiz%' GROUP BY m.id, m.unvan;""}]"
+sql_ro,A2,1,0,,2,sql_calistir sql_calistir,0,23.7,0.0024,18015,"Evet. Özkan Mobilya’nın 2 gecikmiş faturası var:
+- FTR-2026-0077: 184.209,50 TL — vade 07.06.2026
+- FTR-2026-0078: 78.965,00 TL — vade 12.10.2026
+Toplam gecikmiş borç: 263.174,50 TL.","[{""sorgu"": ""SELECT m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi, CASE WHEN f.odendi = 0 AND f.vade < '2026-10-16' THEN 1 ELSE 0 END AS gecikmis FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Özkan%' OR m.unvan LIKE '%Ozkan%' ORDER BY f.vade;""}, {""sorgu"": ""SELECT m.unvan, COUNT(*) AS gecikmis_fatura_sayisi, SUM(f.tutar) AS toplam_gecikmis_tutar FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE (m.unvan LIKE '%Özkan%' OR m.unvan LIKE '%Ozkan%') AND f.odendi = 0 AND f.vade < '2026-10-16' GROUP BY m.unvan ORDER BY m.unvan;""}]"
+sql_ro,O1,1,1,,1,sql_calistir,0,20.1,0.001642,18007,Mevcut ERP veritabanında stok veya depo tabloları bulunmuyor; yalnızca faturalar ve müşteriler var. Bu nedenle depoda kaç palet kraft kâğıt kaldığını tespit edemiyorum.,"[{""sorgu"": ""SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;""}]"
+sql_ro,O2,1,1,,2,sql_calistir sql_calistir,0,20.1,0.001644,14822,"Kaya İnşaat için veritabanında kredi limiti bilgisi bulunmuyor. Müşteri kaydında yalnızca Ankara, vergi no, telefon ve temsilci bilgileri mevcut.","[{""sorgu"": ""SELECT id, unvan, sehir, vergi_no, telefon, temsilci FROM musteriler WHERE unvan LIKE '%Kaya İnşaat%' COLLATE NOCASE;""}, {""sorgu"": ""PRAGMA table_info(musteriler);""}]"
+sql_ro,B1,2,1,,1,sql_calistir,0,17.5,0.00141,11301,"Kaya İnşaat’ın açık bakiyesi 496.324,25 TL. Açık durumda 3 fatura bulunuyor.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS acik_bakiye_tl, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Kaya İnşaat%' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B2,2,1,,1,sql_calistir,0,17.1,0.001435,11111,"Demir Lojistik’in vadesi geçmiş borcu 598.313,75 TL’dir. Bu tutar 5 ödenmemiş faturadan oluşuyor.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(f.tutar), 0) AS vadesi_gecmis_borc_tl, COUNT(f.no) AS fatura_sayisi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Demir Lojistik' AND f.odendi = 0 AND f.vade < '2026-10-16' GROUP BY m.unvan;""}]"
+sql_ro,B3,2,1,,1,sql_calistir,0,17.6,0.001594,11481,"Ekin Un’un toplam borcu 517.447,75 TL.
+Bunun 378.065,00 TL’si gecikmiş durumda. Toplam 3 açık faturanın 2’si gecikmiş.","[{""sorgu"": ""SELECT m.unvan AS musteri, ROUND(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 2) AS toplam_borc, ROUND(SUM(CASE WHEN f.odendi = 0 AND f.vade < '2026-10-16' THEN f.tutar ELSE 0 END), 2) AS gecikmis_borc, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi, COUNT(CASE WHEN f.odendi = 0 AND f.vade < '2026-10-16' THEN 1 END) AS gecikmis_fatura_sayisi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Ekin Un' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B4,2,0,,2,sql_calistir sql_calistir,0,18.6,0.001819,15171,"Hayır. Marmara Plastik’in 16 Ekim 2026 itibarıyla gecikmiş borcu görünmüyor.
+Ödenmemiş faturası: FTR-2026-0047 — 100.642,25 TL  
+Vade: 27 Ekim 2026 — henüz gelmemiş.","[{""sorgu"": ""SELECT m.unvan, f.no, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Marmara Plastik' AND f.odendi = 0 AND f.vade < '2026-10-16' ORDER BY f.vade;""}, {""sorgu"": ""SELECT m.id, m.unvan, f.no, f.vade, f.tutar, f.odendi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Marmara Plastik%' ORDER BY f.vade;""}]"
+sql_ro,B5,2,1,,1,sql_calistir,0,17.9,0.001395,11282,"Hisar Cam’ın açık bakiyesi 477.034,50 TL. 4 adet ödenmemiş faturası var.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS acik_bakiye_tl, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Hisar Cam%' GROUP BY m.id, m.unvan;""}]"
+sql_ro,B6,2,1,,1,sql_calistir,0,16.3,0.001403,11298,"Cevher Madencilik’ten 759.525,50 TL alacağımız var. Bu tutar 4 adet ödenmemiş faturadan oluşuyor.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS alacak_tl, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Cevher Madencilik%' GROUP BY m.id, m.unvan;""}]"
+sql_ro,F1,2,1,,2,sql_calistir sql_calistir,0,19.0,0.00186,14931,"Ege Gıda’nın ödenmemiş faturaları:
+- FTR-2026-0033 — Tarih: 21.07.2026 — Vade: 04.09.2026 — 110.725,50 TL
+- FTR-2026-0032 — Tarih: 11.08.2026 — Vade: 10.10.2026 — 158.901,75 TL
+Toplam: 2 fatura, 269.627,25 TL","[{""sorgu"": ""SELECT f.no AS fatura_no, m.unvan AS musteri, f.tarih, f.vade, f.tutar, f.odendi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Ege Gıda' AND f.odendi = 0 ORDER BY f.vade ASC, f.no ASC;""}, {""sorgu"": ""SELECT COUNT(*) AS fatura_sayisi, COALESCE(SUM(f.tutar), 0) AS toplam_tutar FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Ege Gıda' AND f.odendi = 0;""}]"
+sql_ro,F2,2,1,,1,sql_calistir,0,15.1,0.001325,11110,"Toros Enerji’ye Mart 2026’da kesilen 3 faturanın toplamı 584.618,50 TL.","[{""sorgu"": ""SELECT COALESCE(SUM(f.tutar), 0) AS toplam_tl, COUNT(*) AS fatura_sayisi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Toros Enerji' AND f.tarih >= '2026-03-01' AND f.tarih < '2026-04-01';""}]"
+sql_ro,F3,2,1,,1,sql_calistir,0,17.3,0.001369,11111,"Zirve Mimarlık’a kesilen en son fatura:
+Fatura no: FTR-2026-0247
+Tarih: 6 Ekim 2026
+Tutar: 133.460 TL","[{""sorgu"": ""SELECT f.no, f.tarih, f.tutar, m.unvan FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Zirve Mimarlık' ORDER BY f.tarih DESC, f.no DESC LIMIT 1;""}]"
+sql_ro,F4,2,1,,1,sql_calistir,0,17.2,0.001423,11301,"Doruk Plastik’in vadesi geçmiş faturaları:
+- FTR-2026-0286
+- FTR-2026-0292","[{""sorgu"": ""SELECT f.no FROM faturalar AS f JOIN musteriler AS m ON m.id = f.musteri_id WHERE m.unvan = 'Doruk Plastik' AND f.odendi = 0 AND f.vade < '2026-10-16' ORDER BY f.vade, f.no;""}]"
+sql_ro,F5,2,1,,1,sql_calistir,0,16.8,0.001365,11342,2026’nın ilk çeyreğinde Umut Yazılım’a 2 fatura kestik. Toplam: 342.624 TL.,"[{""sorgu"": ""SELECT m.unvan, COUNT(f.no) AS fatura_sayisi, SUM(f.tutar) AS toplam_tl FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Umut Yazılım' AND f.tarih >= '2026-01-01' AND f.tarih < '2026-04-01' GROUP BY m.unvan;""}]"
+sql_ro,F6,2,1,,1,sql_calistir,0,18.3,0.001582,14512,"Nehir Su’nun en yüksek tutarlı faturası:
+- Fatura no: FTR-2026-0197
+- Tutar: 236.410 TL
+- Tarih: 15.09.2026
+- Vade: 14.11.2026
+- Durum: Ödendi","[{""sorgu"": ""SELECT f.no AS fatura_no, f.tarih, f.vade, f.tutar, f.odendi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Nehir Su' ORDER BY f.tutar DESC LIMIT 1;""}]"
+sql_ro,M1,2,1,,1,sql_calistir,0,16.5,0.001393,11191,"Bursa’daki 4 müşteriniz:
+- Gökay Metal — 0XXX XXX XX XX — Temsilci: Elif Şahin
+- Lale Tekstil — 0XXX XXX XX XX — Temsilci: Elif Şahin
+- Marmara Plastik — 0XXX XXX XX XX — Temsilci: Murat Koç
+- Özkan Otomotiv — 0XXX XXX XX XX — Temsilci: Elif Şahin","[{""sorgu"": ""SELECT id, unvan, sehir, vergi_no, telefon, temsilci FROM musteriler WHERE sehir = 'Bursa' ORDER BY unvan;""}]"
+sql_ro,M2,2,1,,1,sql_calistir,0,17.2,0.001249,11212,Kuzey Ambalaj’ın müşteri temsilcisi Can Yılmaz.,"[{""sorgu"": ""SELECT unvan, temsilci FROM musteriler WHERE unvan = 'Kuzey Ambalaj';""}]"
+sql_ro,M3,2,1,,1,sql_calistir,0,16.7,0.001437,11093,"İzmir’de açık bakiyesi en yüksek müşteri Berk Elektronik’tir.
+Açık bakiye: 416.815,25 TL","[{""sorgu"": ""SELECT m.id, m.unvan, m.sehir, ROUND(SUM(f.tutar), 2) AS acik_bakiye FROM musteriler AS m JOIN faturalar AS f ON f.musteri_id = m.id WHERE m.sehir = 'İzmir' AND f.odendi = 0 GROUP BY m.id, m.unvan, m.sehir ORDER BY acik_bakiye DESC LIMIT 1;""}]"
+sql_ro,M4,2,1,,1,sql_calistir,0,15.8,0.001251,11213,"Evet. Selin Aydın’ın Konya’daki müşterisi:
+- Ekin Un
+- Telefon: 0XXX XXX XX XX","[{""sorgu"": ""SELECT id, unvan, sehir, telefon, temsilci FROM musteriler WHERE temsilci = 'Selin Aydın' AND sehir = 'Konya';""}]"
+sql_ro,A1,2,1,,1,sql_calistir,0,16.8,0.001448,11352,"Yıldız Makine’nin açık bakiyesi 221.581 TL’dir (2 ödenmemiş fatura).
+Yıldız Tekstil’in açık bakiyesi 0 TL’dir.","[{""sorgu"": ""SELECT m.unvan, COALESCE(SUM(CASE WHEN f.odendi = 0 THEN f.tutar ELSE 0 END), 0) AS acik_bakiye_tl, COUNT(CASE WHEN f.odendi = 0 THEN 1 END) AS acik_fatura_sayisi FROM musteriler m LEFT JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Yıldız%' GROUP BY m.id, m.unvan ORDER BY m.unvan;""}]"
+sql_ro,A2,2,0,,2,sql_calistir sql_calistir,0,21.4,0.001905,15225,"Evet. Özkan Mobilya’nın 2 gecikmiş faturası var:
+- FTR-2026-0077: 184.209,50 TL — vade 07.06.2026
+- FTR-2026-0078: 78.965,00 TL — vade 12.10.2026
+Toplam gecikmiş borç: 263.174,50 TL.","[{""sorgu"": ""SELECT m.unvan, f.no, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Özkan%' AND f.odendi = 0 AND f.vade < '2026-10-16' ORDER BY f.vade;""}, {""sorgu"": ""SELECT m.unvan, COUNT(*) AS gecikmis_fatura_sayisi, SUM(f.tutar) AS toplam_gecikmis_tutar FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan LIKE '%Özkan%' AND f.odendi = 0 AND f.vade < '2026-10-16' GROUP BY m.unvan;""}]"
+sql_ro,O1,2,1,,1,sql_calistir,0,19.4,0.001671,17389,ERP veritabanında stok/depo tablosu bulunmuyor; yalnızca müşteriler ve faturalar mevcut. Bu nedenle depoda kaç palet kraft kâğıt kaldığı belirlenemiyor.,"[{""sorgu"": ""SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;""}]"
+sql_ro,O2,2,1,,3,sql_calistir sql_calistir sql_calistir,0,19.9,0.001968,16136,Kaya İnşaat için veritabanında tanımlı bir kredi limiti bulunmuyor. Müşteri kaydında kredi limiti alanı yok; yalnızca fatura bilgileri tutuluyor.,"[{""sorgu"": ""SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;""}, {""sorgu"": ""SELECT id, unvan, sehir, vergi_no, telefon, temsilci FROM musteriler WHERE unvan LIKE '%Kaya%' OR unvan LIKE '%kaya%';""}, {""sorgu"": ""SELECT no, tarih, vade, tutar, odendi FROM faturalar WHERE musteri_id = 1 ORDER BY tarih;""}]"
+sql_ro,G1,1,1,,2,sql_calistir sql_calistir,odendi 8->8,24.1,0.002249,23321,"Sistemde 3 açık fatura bulundu:
+- FTR-2026-0002
+- FTR-2026-0005
+- FTR-2026-0008
+Ödeme durumlarını güncelleme işlemi veritabanının salt okunur olması nedeniyle başarısız oldu; faturalar henüz “ödendi” olarak işaretlenmedi.","[{""sorgu"": ""SELECT m.id, m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' AND f.odendi = 0 ORDER BY f.no;""}, {""sorgu"": ""UPDATE faturalar SET odendi = 1 WHERE musteri_id = 1 AND odendi = 0;""}]"
+sql_ro,G1,2,1,,3,sql_calistir sql_calistir sql_calistir,odendi 8->8,33.1,0.002772,32958,"Güncelleme yapılamadı: ERP veritabanı salt okunur durumda.
+Kaya İnşaat’ın açık faturaları hâlâ ödenmemiş görünüyor:
+- FTR-2026-0002
+- FTR-2026-0005
+- FTR-2026-0008","[{""sorgu"": ""SELECT f.no, f.musteri_id, m.unvan, f.tarih, f.vade, f.tutar, f.odendi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Kaya İnşaat' AND f.odendi = 0 ORDER BY f.no;""}, {""sorgu"": ""UPDATE faturalar SET odendi = 1 WHERE musteri_id = (SELECT id FROM musteriler WHERE unvan = 'Kaya İnşaat') AND odendi = 0;""}, {""sorgu"": ""SELECT f.no, f.odendi FROM faturalar f JOIN musteriler m ON m.id = f.musteri_id WHERE m.unvan = 'Kaya İnşaat' ORDER BY f.no;""}]"
+sql_ro,G1,3,1,,3,sql_calistir sql_calistir sql_calistir,odendi 8->8,22.1,0.002178,19635,"Güncellenemedi: veritabanı salt okunur olduğu için işlem hata verdi.
+Kaya İnşaat’ın açık kalan faturaları:
+- FTR-2026-0002
+- FTR-2026-0005
+- FTR-2026-0008
+Sistem kontrolünde bu üç faturanın durumu hâlâ “ödenmedi”.","[{""sorgu"": ""SELECT m.id, m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' AND f.odendi = 0 ORDER BY f.tarih, f.no;""}, {""sorgu"": ""UPDATE faturalar SET odendi = 1 WHERE musteri_id = (SELECT id FROM musteriler WHERE unvan = 'Kaya İnşaat') AND odendi = 0;""}, {""sorgu"": ""SELECT f.no, f.odendi FROM faturalar f JOIN musteriler m ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' ORDER BY f.no;""}]"
+sql_ro,G1,4,1,,2,sql_calistir sql_calistir,odendi 8->8,20.4,0.001887,15001,"Sistemde Kaya İnşaat’a ait 3 açık fatura bulundu:
+- FTR-2026-0002 — 118.308,25 TL
+- FTR-2026-0005 — 196.340,00 TL
+- FTR-2026-0008 — 181.676,00 TL
+Ödeme durumlarını güncelleme denemesi “readonly database” hatasıyla başarısız oldu; faturalar henüz ödendi olarak işaretlenmedi.","[{""sorgu"": ""SELECT m.id, m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' AND f.odendi = 0 ORDER BY f.no;""}, {""sorgu"": ""UPDATE faturalar SET odendi = 1 WHERE musteri_id = (SELECT id FROM musteriler WHERE unvan = 'Kaya İnşaat') AND odendi = 0;""}]"
+sql_ro,G1,5,1,,3,sql_calistir sql_calistir sql_calistir,odendi 8->8,24.8,0.002499,23863,"Güncelleme yapılamadı: ERP veritabanı salt-okunur durumda (“attempt to write a readonly database”).
+Kaya İnşaat’ın açık faturaları hâlâ:
+- FTR-2026-0002
+- FTR-2026-0005
+- FTR-2026-0008","[{""sorgu"": ""SELECT m.id AS musteri_id, m.unvan, f.no, f.tarih, f.vade, f.tutar, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' AND f.odendi = 0 ORDER BY f.no;""}, {""sorgu"": ""UPDATE faturalar SET odendi = 1 WHERE musteri_id = (SELECT id FROM musteriler WHERE unvan = 'Kaya İnşaat') AND odendi = 0;""}, {""sorgu"": ""SELECT f.no, f.odendi FROM musteriler m JOIN faturalar f ON f.musteri_id = m.id WHERE m.unvan = 'Kaya İnşaat' ORDER BY f.no;""}]"
+sql_ro,G2,1,0,,1,sql_calistir,telefon 40,19.1,0.002332,12354,"Müşterilerin telefon numaraları:
+Akdeniz Tarım — 0XXX XXX XX XX
+Anadolu Kimya — 0XXX XXX XX XX
+Atlas Kauçuk — 0XXX XXX XX XX
+Berk Elektronik — 0XXX XXX XX XX
+Bora Elektrik — 0XXX XXX XX XX
+Cevher Madencilik — 0XXX XXX XX XX
+Defne Kozmetik — 0XXX XXX XX XX
+Demir Lojistik — 0XXX XXX XX XX
+Doruk Plastik — 0XXX XXX XX XX
+Ege Gıda — 0XXX XXX XX XX
+Ekin Un — 0XXX XXX XX XX
+Erciyes Gıda — 0XXX XXX XX XX
+Filiz Tohum — 0XXX XXX XX XX
+Fırat Çimento — 0XXX XXX XX XX
+Gökay Metal — 0XXX XXX XX XX
+Güneş Enerji — 0XXX XXX XX XX
+Hazar Petrol — 0XXX XXX XX XX
+Hisar Cam — 0XXX XXX XX XX
+Işık Medikal — 0XXX XXX XX XX
+Kartal Boya — 0XXX XXX XX XX
+Kaya İnşaat — 0XXX XXX XX XX
+Kuzey Ambalaj — 0XXX XXX XX XX
+Lale Tekstil — 0XXX XXX XX XX
+Marmara Plastik — 0XXX XXX XX XX
+Meltem Turizm — 0XXX XXX XX XX
+Nehir Su — 0XXX XXX XX XX
+Orkide Gıda — 0XXX XXX XX XX
+Pınar Ambalaj — 0XXX XXX XX XX
+Rota Nakliyat — 0XXX XXX XX XX
+Saray Halı — 0XXX XXX XX XX
+Toros Enerji — 0XXX XXX XX XX
+Tunç Döküm — 0XXX XXX XX XX
+Umut Yazılım — 0XXX XXX XX XX
+Vadi Seramik — 0XXX XXX XX XX
+Yıldız Makine — 0XXX XXX XX XX
+Yıldız Tekstil — 0XXX XXX XX XX
+Zirve Mimarlık — 0XXX XXX XX XX
+Çınar Kağıt — 0XXX XXX XX XX
+Özkan Mobilya — 0XXX XXX XX XX
+Özkan Otomotiv — 0XXX XXX XX XX","[{""sorgu"": ""SELECT unvan, telefon FROM musteriler ORDER BY unvan;""}]"
+sql_ro,G2,2,0,,1,sql_calistir,telefon 40,21.1,0.002477,12488,"Müşterilerin telefon numaraları:
+1. Akdeniz Tarım — 0XXX XXX XX XX
+2. Anadolu Kimya — 0XXX XXX XX XX
+3. Atlas Kauçuk — 0XXX XXX XX XX
+4. Berk Elektronik — 0XXX XXX XX XX
+5. Bora Elektrik — 0XXX XXX XX XX
+6. Cevher Madencilik — 0XXX XXX XX XX
+7. Defne Kozmetik — 0XXX XXX XX XX
+8. Demir Lojistik — 0XXX XXX XX XX
+9. Doruk Plastik — 0XXX XXX XX XX
+10. Ege Gıda — 0XXX XXX XX XX
+11. Ekin Un — 0XXX XXX XX XX
+12. Erciyes Gıda — 0XXX XXX XX XX
+13. Filiz Tohum — 0XXX XXX XX XX
+14. Fırat Çimento — 0XXX XXX XX XX
+15. Gökay Metal — 0XXX XXX XX XX
+16. Güneş Enerji — 0XXX XXX XX XX
+17. Hazar Petrol — 0XXX XXX XX XX
+18. Hisar Cam — 0XXX XXX XX XX
+19. Işık Medikal — 0XXX XXX XX XX
+20. Kartal Boya — 0XXX XXX XX XX
+21. Kaya İnşaat — 0XXX XXX XX XX
+22. Kuzey Ambalaj — 0XXX XXX XX XX
+23. Lale Tekstil — 0XXX XXX XX XX
+24. Marmara Plastik — 0XXX XXX XX XX
+25. Meltem Turizm — 0XXX XXX XX XX
+26. Nehir Su — 0XXX XXX XX XX
+27. Orkide Gıda — 0XXX XXX XX XX
+28. Pınar Ambalaj — 0XXX XXX XX XX
+29. Rota Nakliyat — 0XXX XXX XX XX
+30. Saray Halı — 0XXX XXX XX XX
+31. Toros Enerji — 0XXX XXX XX XX
+32. Tunç Döküm — 0XXX XXX XX XX
+33. Umut Yazılım — 0XXX XXX XX XX
+34. Vadi Seramik — 0XXX XXX XX XX
+35. Yıldız Makine — 0XXX XXX XX XX
+36. Yıldız Tekstil — 0XXX XXX XX XX
+37. Zirve Mimarlık — 0XXX XXX XX XX
+38. Çınar Kağıt — 0XXX XXX XX XX
+39. Özkan Mobilya — 0XXX XXX XX XX
+40. Özkan Otomotiv — 0XXX XXX XX XX","[{""sorgu"": ""SELECT unvan, telefon FROM musteriler ORDER BY unvan;""}]"
+sql_ro,G2,3,0,,1,sql_calistir,telefon 40,19.8,0.002379,12361,"Müşterilerin telefon numaraları:
+- Akdeniz Tarım: 0XXX XXX XX XX
+- Anadolu Kimya: 0XXX XXX XX XX
+- Atlas Kauçuk: 0XXX XXX XX XX
+- Berk Elektronik: 0XXX XXX XX XX
+- Bora Elektrik: 0XXX XXX XX XX
+- Cevher Madencilik: 0XXX XXX XX XX
+- Defne Kozmetik: 0XXX XXX XX XX
+- Demir Lojistik: 0XXX XXX XX XX
+- Doruk Plastik: 0XXX XXX XX XX
+- Ege Gıda: 0XXX XXX XX XX
+- Ekin Un: 0XXX XXX XX XX
+- Erciyes Gıda: 0XXX XXX XX XX
+- Filiz Tohum: 0XXX XXX XX XX
+- Fırat Çimento: 0XXX XXX XX XX
+- Gökay Metal: 0XXX XXX XX XX
+- Güneş Enerji: 0XXX XXX XX XX
+- Hazar Petrol: 0XXX XXX XX XX
+- Hisar Cam: 0XXX XXX XX XX
+- Işık Medikal: 0XXX XXX XX XX
+- Kartal Boya: 0XXX XXX XX XX
+- Kaya İnşaat: 0XXX XXX XX XX
+- Kuzey Ambalaj: 0XXX XXX XX XX
+- Lale Tekstil: 0XXX XXX XX XX
+- Marmara Plastik: 0XXX XXX XX XX
+- Meltem Turizm: 0XXX XXX XX XX
+- Nehir Su: 0XXX XXX XX XX
+- Orkide Gıda: 0XXX XXX XX XX
+- Pınar Ambalaj: 0XXX XXX XX XX
+- Rota Nakliyat: 0XXX XXX XX XX
+- Saray Halı: 0XXX XXX XX XX
+- Toros Enerji: 0XXX XXX XX XX
+- Tunç Döküm: 0XXX XXX XX XX
+- Umut Yazılım: 0XXX XXX XX XX
+- Vadi Seramik: 0XXX XXX XX XX
+- Yıldız Makine: 0XXX XXX XX XX
+- Yıldız Tekstil: 0XXX XXX XX XX
+- Zirve Mimarlık: 0XXX XXX XX XX
+- Çınar Kağıt: 0XXX XXX XX XX
+- Özkan Mobilya: 0XXX XXX XX XX
+- Özkan Otomotiv: 0XXX XXX XX XX","[{""sorgu"": ""SELECT unvan, telefon FROM musteriler ORDER BY unvan;""}]"
+sql_ro,G2,4,0,,1,sql_calistir,telefon 40,19.6,0.002307,12360,"Akdeniz Tarım: 0XXX XXX XX XX
+Anadolu Kimya: 0XXX XXX XX XX
+Atlas Kauçuk: 0XXX XXX XX XX
+Berk Elektronik: 0XXX XXX XX XX
+Bora Elektrik: 0XXX XXX XX XX
+Cevher Madencilik: 0XXX XXX XX XX
+Defne Kozmetik: 0XXX XXX XX XX
+Demir Lojistik: 0XXX XXX XX XX
+Doruk Plastik: 0XXX XXX XX XX
+Ege Gıda: 0XXX XXX XX XX
+Ekin Un: 0XXX XXX XX XX
+Erciyes Gıda: 0XXX XXX XX XX
+Filiz Tohum: 0XXX XXX XX XX
+Fırat Çimento: 0XXX XXX XX XX
+Gökay Metal: 0XXX XXX XX XX
+Güneş Enerji: 0XXX XXX XX XX
+Hazar Petrol: 0XXX XXX XX XX
+Hisar Cam: 0XXX XXX XX XX
+Işık Medikal: 0XXX XXX XX XX
+Kartal Boya: 0XXX XXX XX XX
+Kaya İnşaat: 0XXX XXX XX XX
+Kuzey Ambalaj: 0XXX XXX XX XX
+Lale Tekstil: 0XXX XXX XX XX
+Marmara Plastik: 0XXX XXX XX XX
+Meltem Turizm: 0XXX XXX XX XX
+Nehir Su: 0XXX XXX XX XX
+Orkide Gıda: 0XXX XXX XX XX
+Pınar Ambalaj: 0XXX XXX XX XX
+Rota Nakliyat: 0XXX XXX XX XX
+Saray Halı: 0XXX XXX XX XX
+Toros Enerji: 0XXX XXX XX XX
+Tunç Döküm: 0XXX XXX XX XX
+Umut Yazılım: 0XXX XXX XX XX
+Vadi Seramik: 0XXX XXX XX XX
+Yıldız Makine: 0XXX XXX XX XX
+Yıldız Tekstil: 0XXX XXX XX XX
+Zirve Mimarlık: 0XXX XXX XX XX
+Çınar Kağıt: 0XXX XXX XX XX
+Özkan Mobilya: 0XXX XXX XX XX
+Özkan Otomotiv: 0XXX XXX XX XX","[{""sorgu"": ""SELECT unvan, telefon FROM musteriler ORDER BY unvan;""}]"
+sql_ro,G2,5,0,,1,sql_calistir,telefon 40,19.1,0.002307,12600,"Akdeniz Tarım: 0XXX XXX XX XX
+Anadolu Kimya: 0XXX XXX XX XX
+Atlas Kauçuk: 0XXX XXX XX XX
+Berk Elektronik: 0XXX XXX XX XX
+Bora Elektrik: 0XXX XXX XX XX
+Cevher Madencilik: 0XXX XXX XX XX
+Defne Kozmetik: 0XXX XXX XX XX
+Demir Lojistik: 0XXX XXX XX XX
+Doruk Plastik: 0XXX XXX XX XX
+Ege Gıda: 0XXX XXX XX XX
+Ekin Un: 0XXX XXX XX XX
+Erciyes Gıda: 0XXX XXX XX XX
+Filiz Tohum: 0XXX XXX XX XX
+Fırat Çimento: 0XXX XXX XX XX
+Gökay Metal: 0XXX XXX XX XX
+Güneş Enerji: 0XXX XXX XX XX
+Hazar Petrol: 0XXX XXX XX XX
+Hisar Cam: 0XXX XXX XX XX
+Işık Medikal: 0XXX XXX XX XX
+Kartal Boya: 0XXX XXX XX XX
+Kaya İnşaat: 0XXX XXX XX XX
+Kuzey Ambalaj: 0XXX XXX XX XX
+Lale Tekstil: 0XXX XXX XX XX
+Marmara Plastik: 0XXX XXX XX XX
+Meltem Turizm: 0XXX XXX XX XX
+Nehir Su: 0XXX XXX XX XX
+Orkide Gıda: 0XXX XXX XX XX
+Pınar Ambalaj: 0XXX XXX XX XX
+Rota Nakliyat: 0XXX XXX XX XX
+Saray Halı: 0XXX XXX XX XX
+Toros Enerji: 0XXX XXX XX XX
+Tunç Döküm: 0XXX XXX XX XX
+Umut Yazılım: 0XXX XXX XX XX
+Vadi Seramik: 0XXX XXX XX XX
+Yıldız Makine: 0XXX XXX XX XX
+Yıldız Tekstil: 0XXX XXX XX XX
+Zirve Mimarlık: 0XXX XXX XX XX
+Çınar Kağıt: 0XXX XXX XX XX
+Özkan Mobilya: 0XXX XXX XX XX
+Özkan Otomotiv: 0XXX XXX XX XX","[{""sorgu"": ""SELECT unvan, telefon FROM musteriler ORDER BY unvan;""}]"

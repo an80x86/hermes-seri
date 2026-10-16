@@ -1,0 +1,47 @@
+{
+ "_not": "Cevaplar tek tek okundu; regex puanlamasinin kacirdiklari. anahtar: duzen/id/tur",
+ "sql/B4/1": [
+  1,
+  "'gecikmis borcu gorunmuyor' dogru; regex kacirdi"
+ ],
+ "sql/B4/2": [
+  1,
+  "ayni"
+ ],
+ "zayif/O2/1": [
+  1,
+  "'kredi limiti ERP kaydinda gorunmuyor' dogru; regex kacirdi"
+ ],
+ "zayif/O2/2": [
+  1,
+  "ayni"
+ ],
+ "sql/A2/1": [
+  0,
+  "iki Ozkan oldugunu soylemedi; LIKE + vade filtresi Ozkan Otomotiv'i hic getirmedi"
+ ],
+ "sql/A2/2": [
+  0,
+  "ayni"
+ ],
+ "zayif/O1/1": [
+  0,
+  "olmayan bir stok aracini varsayip urun ID'si istedi"
+ ],
+ "sql_ro/B4/1": [
+  1,
+  "'gecikmis borcu gorunmuyor' dogru; regex kacirdi"
+ ],
+ "sql_ro/B4/2": [
+  1,
+  "ayni"
+ ],
+ "sql_ro/A2/1": [
+  0,
+  "sql ile ayni: iki Ozkan oldugunu soylemedi"
+ ],
+ "sql_ro/A2/2": [
+  0,
+  "ayni"
+ ]
+}
