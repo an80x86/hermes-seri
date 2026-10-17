@@ -1,0 +1,778 @@
+duzen,tekrar,dosya,toplam,musteri_kumesi,siralama,tutarlar,temsilci,acil,kvkk,puan,tam,skill_yuklendi,skill_view,arac_sayisi,araclar,sure,maliyet,token,rapor_yolu,cevap
+yok,1,0,0,0,0,0,0,0,1,1,0,0,,5,read_file terminal terminal terminal write_file,38.6,0.007295,56129,/Users/user/hermes-seri/h6_olc/yok_1/calisma/tahsilat_raporu_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/tahsilat_raporu_2026-10-16.md
+Özet:
+- Bugün vadeli fatura: 0 adet, 0,00 TL
+- Vadesi geçmiş ve ödenmemiş alacak: 67 adet, 8.071.788,25 TL
+- En yüksek gecikmiş alacak: Elif Şahin portföyünde 2.361.571,50 TL
+- 90 günden fazla gecikmiş alacak: 24 adet, 3.128.073,50 TL
+Veritabanında tahsilat tarihi bulunmadığı için rapor, gerçekleşen tahsilatları değil vade ve “ödenmiş/ödenmemiş” durumunu gösterir."
+prompt,1,1,1,1,1,1,1,1,1,8,1,0,,9,terminal search_files search_files terminal terminal terminal terminal write_file terminal,52.4,0.01564,157072,/Users/user/hermes-seri/h6_olc/prompt_1/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı:
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Tutar sıralaması ve [ACİL] işaretleri doğru
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,1,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,10,skill_view terminal terminal terminal terminal terminal write_file read_file terminal terminal,58.4,0.013032,132092,/Users/user/hermes-seri/h6_olc/ajan1_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri ve 67 fatura rapora dahil edildi. Vadesi bugün olan veya ödenmiş faturalar dışarıda bırakıldı; rapor doğrulandı."
+ajan2,1,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,4,skill_view terminal read_file terminal,30.8,0.004844,33231,/Users/user/hermes-seri/h6_olc/ajan2_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Gecikmiş fatura: 67
+- Müşteri: 31
+- [ACİL] işaretli müşteri: 18
+Rapor; ödenmemiş, vadesi bugünden önce olan faturaları içeriyor ve telefon/vergi bilgisi barındırmıyor."
+ajan3,1,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,8,skill_view terminal terminal terminal write_file read_file terminal terminal,54.8,0.01134,99153,/Users/user/hermes-seri/h6_olc/ajan3_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş tahsilat: 8.071.788,25 TL
+- 31 müşteri
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- Tutarlar azalan sırada
+- 60 günden eski kayıtlar “[ACİL]” olarak işaretlendi
+Raporun tarihi, toplamı ve veritabanındaki uygun kayıtlarla doğrulandı."
+benim,1,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,7,skill_view terminal search_files terminal terminal write_file terminal,45.1,0.007622,64430,/Users/user/hermes-seri/h6_olc/benim_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Acil işaretli müşteri sayısı: 18
+Rapor, ödenmemiş ve vadesi 2026-10-16’dan önce olan faturaları içeriyor; telefon ve vergi numarası bilgileri dahil edilmedi."
+kotu_aciklama,1,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,9,skill_view terminal terminal terminal terminal terminal write_file read_file terminal,48.1,0.007983,74556,/Users/user/hermes-seri/h6_olc/kotu_aciklama_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi.
+- Ödenmiş veya vadesi gelmemiş faturalar rapora dahil edilmedi."
+benim_betik,1,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu finans:tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,25.7,0.003173,35729,/Users/user/hermes-seri/h6_olc/benim_betik_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Borçlu müşteri sayısı: 31
+Rapor dosyası:
+ /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,2,0,0,0,0,0,0,0,1,1,0,0,,10,search_files terminal terminal terminal terminal terminal terminal write_file read_file terminal,46.4,0.012432,136656,/Users/user/hermes-seri/h6_olc/yok_2/calisma/tahsilat_raporu_2026-10-16.md,"16.10.2026 tarihli tahsilat raporu hazırlandı.
+Özet:
+- Bugün vadeli fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş açık bakiye: 67 adet / 8.071.788,25 TL
+- İleri vadeli açık bakiye: 27 adet / 3.609.966,00 TL
+- Vadesi gelen tahsil edilmiş: 209 adet / 23.923.587,00 TL
+- Veritabanı toplamı: 326 fatura / 38.656.634,25 TL
+Rapor dosyası:
+ /opt/data/calisma/tahsilat_raporu_2026-10-16.md
+Not: Veritabanında ödeme tarihi alanı bulunmadığı için “bugün tahsil edilen” tutar ayrı hesaplanamıyor; rapor vade ve odendi durumuna göre hazırlanmıştır."
+prompt,2,1,1,1,1,1,1,1,1,8,1,0,,12,terminal search_files search_files terminal terminal terminal terminal terminal terminal write_file terminal terminal,52.6,0.011373,100884,/Users/user/hermes-seri/h6_olc/prompt_2/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı: 31 müşteri, 67 vadesi geçmiş ve ödenmemiş fatura, toplam 8.071.788,25 TL. Tutar sıralaması, [ACİL] işaretleri ve KVKK kısıtları kontrol edildi."
+ajan1,2,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,9,skill_view terminal terminal terminal terminal read_file write_file read_file terminal,43.2,0.010206,92121,/Users/user/hermes-seri/h6_olc/ajan1_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 fatura dahil edildi.
+Sıralama, toplam tutar ve vade/ödeme koşulları doğrulandı."
+ajan2,2,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,4,skill_view terminal terminal read_file,25.9,0.005062,41973,/Users/user/hermes-seri/h6_olc/ajan2_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Gecikmiş fatura: 67
+- Müşteri satırı: 31
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Filtre: vadesi 2026-10-16’dan önce olan, ödenmemiş faturalar
+- Telefon ve vergi bilgileri rapora dahil edilmedi."
+ajan3,2,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,10,skill_view terminal search_files terminal terminal terminal write_file read_file terminal terminal,51.0,0.010918,100435,/Users/user/hermes-seri/h6_olc/ajan3_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam: 8.071.788,25 TL
+Müşteri sayısı: 31
+Fatura sayısı: 67
+Rapor; vadesi geçmiş ve ödenmemiş faturaları içeriyor, tutara göre azalan sıralandı ve 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi. Doğrulama başarılı."
+benim,2,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal search_files terminal terminal terminal read_file terminal,33.7,0.006025,57084,/Users/user/hermes-seri/h6_olc/benim_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 31 müşteri
+- 67 ödenmemiş ve vadesi geçmiş fatura
+- 18 müşteri için [ACİL] işareti
+- Telefon ve vergi numaraları rapora dahil edilmedi
+Kontroller tamamlandı: toplam tutar tabloyla eşleşiyor; ödenmiş veya vadesi gelmemiş faturalar rapora alınmadı."
+kotu_aciklama,2,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,4,skill_view terminal terminal terminal,28.7,0.004754,37596,/Users/user/hermes-seri/h6_olc/kotu_aciklama_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden eski vadeler “[ACİL]” olarak işaretlendi
+- Telefon ve vergi numaraları rapora dahil edilmedi
+- Toplam, kaynak verilerle doğrulandı"
+benim_betik,2,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu finans/tahsilat-raporu,6,skill_view terminal search_files skill_view terminal read_file,20.8,0.003298,36247,/Users/user/hermes-seri/h6_olc/benim_betik_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Borçlu müşteri sayısı: 31
+Rapor dosyası:
+ /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,3,0,0,0,0,0,0,0,1,1,0,0,,9,search_files terminal terminal terminal terminal terminal terminal write_file terminal,51.0,0.013302,149915,/Users/user/hermes-seri/h6_olc/yok_3/calisma/tahsilat_raporu_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Özet:
+- Açık alacak: 94 fatura, 11.681.754,25 TL
+- Vadesi geçmiş alacak: 67 fatura, 8.071.788,25 TL
+- Bugün vadesi gelen açık fatura: Yok
+- Önümüzdeki 7 günün tahsilat beklentisi: 3 fatura, 653.576,75 TL
+Rapor dosyası:
+`/opt/data/calisma/tahsilat_raporu_2026-10-16.md`
+Veriler veritabanındaki `odendi` ve `vade` alanlarına göre doğrulandı."
+prompt,3,1,1,1,1,1,1,1,1,8,1,0,,9,terminal search_files terminal terminal terminal terminal write_file read_file terminal,45.4,0.010522,88724,/Users/user/hermes-seri/h6_olc/prompt_3/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı:
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 18 müşteri [ACİL] olarak işaretlendi
+- Yalnızca vadesi geçmiş ve ödenmemiş faturalar dahil edildi
+- Telefon ve vergi numarası eklenmedi
+- Tutarlar büyükten küçüğe sıralandı"
+ajan1,3,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,7,skill_view terminal terminal terminal write_file read_file terminal,38.5,0.009319,70216,/Users/user/hermes-seri/h6_olc/ajan1_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Fatura sayısı: 67
+- Sıralama, müşteri bazında gecikmiş tutara göre azalan düzende
+- Vadesi geçmiş ve ödenmemiş faturalar dahil edildi
+- Telefon ve vergi bilgileri rapora eklenmedi"
+ajan2,3,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,6,skill_view terminal search_files terminal terminal read_file,31.0,0.005551,50089,/Users/user/hermes-seri/h6_olc/ajan2_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 67 gecikmiş fatura
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+Rapor; vadesi geçmiş ve ödenmemiş faturalarla oluşturuldu, tutara göre azalan sıralandı ve 60 günden eski alacaklar “[ACİL]” olarak işaretlendi."
+ajan3,3,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,9,skill_view terminal search_files terminal terminal terminal write_file read_file terminal,45.4,0.013952,152671,/Users/user/hermes-seri/h6_olc/ajan3_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam: 8.071.788,25 TL
+Müşteri sayısı: 31
+Doğrulandı: yalnızca vadesi geçmiş ve ödenmemiş faturalar dahil edildi; tutarlar azalan sırada ve hassas müşteri bilgileri rapora eklenmedi."
+benim,3,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal search_files terminal terminal terminal read_file terminal,36.5,0.006215,66515,/Users/user/hermes-seri/h6_olc/benim_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Gecikmiş fatura: 67
+- Müşteri: 31
+- 60 günden fazla gecikenler “[ACİL]” olarak işaretlendi.
+- Ödenmiş veya vadesi gelmemiş faturalar dahil edilmedi.
+- Telefon ve vergi numarası bilgileri rapora alınmadı."
+kotu_aciklama,3,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,7,skill_view search_files terminal terminal terminal terminal read_file,36.9,0.005373,56128,/Users/user/hermes-seri/h6_olc/kotu_aciklama_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Kontroller başarılı: ödenmiş veya vadesi gelmemiş faturalar dahil edilmedi; tutarlar müşteri bazında büyükten küçüğe sıralandı."
+benim_betik,3,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,5,skill_view search_files terminal terminal read_file,18.6,0.002915,27684,/Users/user/hermes-seri/h6_olc/benim_betik_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam: 31 müşteri, 8.071.788,25 TL gecikmiş alacak
+Rapor dosyası:
+ /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,4,0,0,0,0,0,0,0,1,1,0,0,,9,search_files terminal terminal terminal terminal terminal terminal terminal write_file,45.3,0.007155,72597,,"16.10.2026 tahsilat raporu hazırlandı.
+Özet:
+- Toplam fatura: 326 adet / 38.656.634,25 TL
+- Ödenen: 232 adet / 26.974.880,00 TL
+- Ödenmeyen: 94 adet / 11.681.754,25 TL
+- Vadesi geçmiş açık bakiye: 67 adet / 8.071.788,25 TL
+- Bugün vadeli fatura: 0 adet / 0,00 TL
+Not: Veritabanında tahsilat tarihi bulunmadığı için fiilen bugün yapılan tahsilat ayrı olarak hesaplanamıyor; rapor fatura vadesi ve “odendi” durumuna göre hazırlandı.
+Dosya:
+ /opt/data/calisma/tahsilat_raporu_2026-10-16.txt"
+prompt,4,1,1,1,1,1,1,1,1,8,1,0,,10,search_files terminal read_file terminal terminal write_file terminal read_file terminal terminal,58.5,0.01143,113507,/Users/user/hermes-seri/h6_olc/prompt_4/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı ve doğrulandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+31 müşteri, 67 gecikmiş fatura, toplam 8.071.788,25 TL. Tutar sıralaması, [ACİL] işaretleri ve KVKK alanlarının çıkarılmadığı kontrol edildi."
+ajan1,4,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,9,skill_view terminal terminal terminal terminal write_file read_file terminal terminal,50.5,0.011427,105938,/Users/user/hermes-seri/h6_olc/ajan1_4/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+67 fatura, 31 müşteri dahil edildi. Vadesi geçmiş ve ödenmemiş faturalar kullanıldı; tutar sıralaması ve hassas alan kontrolleri başarılı."
+ajan2,4,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,4,skill_view terminal terminal read_file,29.7,0.005172,41766,/Users/user/hermes-seri/h6_olc/ajan2_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Gecikmiş fatura: 67
+Müşteri satırı: 31
+Rapor; ödenmemiş, vadesi 2026-10-16’dan önce olan faturaları içeriyor ve tutarları azalan sırada listeliyor. Telefon ve vergi bilgileri dahil edilmedi."
+ajan3,4,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,9,skill_view terminal search_files terminal terminal terminal write_file read_file terminal,45.0,0.010127,89155,/Users/user/hermes-seri/h6_olc/ajan3_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş ve ödenmemiş fatura sayısı: 67
+Rapor; tutara göre azalan sıralı, 60 günden eski kayıtlar “[ACİL]” olarak işaretli ve toplam tutar veritabanıyla doğrulandı."
+benim,4,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal search_files terminal terminal terminal write_file terminal,41.6,0.007953,72271,/Users/user/hermes-seri/h6_olc/benim_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi
+- Telefon ve vergi numarası rapora eklenmedi
+Rapor ve toplam tutar doğrulandı."
+kotu_aciklama,4,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,10,skill_view terminal terminal terminal terminal terminal terminal terminal write_file terminal,53.9,0.008891,92993,/Users/user/hermes-seri/h6_olc/kotu_aciklama_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi.
+Kontroller tamamlandı: toplamlar eşleşiyor, tutarlar azalan sırada, KVKK kapsamındaki telefon ve vergi bilgileri rapora alınmadı."
+benim_betik,4,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu finans:tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,19.1,0.00315,35712,/Users/user/hermes-seri/h6_olc/benim_betik_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Özet: 31 müşteri, toplam 8.071.788,25 TL gecikmiş alacak.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,5,0,0,0,0,0,0,0,1,1,0,0,,11,search_files terminal read_file terminal terminal search_files terminal terminal write_file terminal patch,45.4,0.007391,83813,/Users/user/hermes-seri/h6_olc/yok_5/calisma/tahsilat-raporu-2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Özet:
+- Bugün vadeli fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş ödenmemiş fatura: 67 adet / 8.071.788,25 TL
+- Toplam ödenmemiş alacak: 94 adet / 11.681.754,25 TL
+- Öncelikli 10 müşterinin vadesi geçmiş bakiyesi: 4.292.567,25 TL
+Rapor dosyası:
+`/opt/data/calisma/tahsilat-raporu-2026-10-16.md`
+Not: Veritabanında ödeme tarihi bulunmadığı için “bugün tahsil edilen” tutar değil, bugünkü vade ve mevcut ödeme durumu raporlanmıştır."
+prompt,5,1,1,1,1,1,1,1,1,8,1,0,,11,search_files terminal search_files terminal terminal terminal terminal write_file terminal terminal terminal,53.7,0.012251,123172,/Users/user/hermes-seri/h6_olc/prompt_5/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı:
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Tutarlar büyükten küçüğe sıralı
+- 60 günden eski vadeler “[ACİL]” olarak işaretli
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,5,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,9,skill_view terminal terminal terminal terminal read_file write_file read_file terminal,47.7,0.011432,108565,/Users/user/hermes-seri/h6_olc/ajan1_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri ve 67 fatura rapora dahil edildi.
+Doğrulandı:
+- Vadesi geçmiş ve ödenmemiş faturalar kullanıldı.
+- Fatura ve müşteri sayıları veritabanıyla eşleşiyor.
+- Toplam tutar doğru.
+- Satırlar tutara göre azalan sıralı.
+- Telefon ve vergi bilgileri raporda yer almıyor."
+ajan2,5,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,6,skill_view terminal terminal terminal read_file terminal,33.6,0.006991,63910,/Users/user/hermes-seri/h6_olc/ajan2_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+- 31 müşteri
+- 67 gecikmiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Tutar sıralaması, müşteri gruplaması ve `[ACİL]` işaretleri doğrulandı
+- Telefon ve vergi bilgileri rapora dahil edilmedi"
+ajan3,5,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,10,skill_view terminal terminal terminal terminal terminal write_file read_file terminal terminal,53.8,0.011186,99765,/Users/user/hermes-seri/h6_olc/ajan3_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş tahsilat: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Doğrulandı: vadesi gelmemiş ve ödenmiş faturalar hariç tutuldu; tutarlar azalan sırada; 60 günden eski kayıtlar “[ACİL]” olarak işaretlendi; hassas telefon ve vergi bilgileri rapora eklenmedi."
+benim,5,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal terminal terminal terminal terminal write_file terminal,39.5,0.008102,72578,/Users/user/hermes-seri/h6_olc/benim_5/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL  
+31 müşteri, 67 vadesi geçmiş ve ödenmemiş fatura dahil edildi. Rapor toplamı ve veritabanı tutarı doğrulandı."
+kotu_aciklama,5,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,7,skill_view terminal search_files terminal terminal write_file terminal,41.5,0.007604,64174,/Users/user/hermes-seri/h6_olc/kotu_aciklama_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- 18 müşteri için [ACİL] işareti
+- Tutarlar büyükten küçüğe sıralandı
+- Telefon ve vergi numarası eklenmedi
+- Rapor toplamı veritabanı toplamıyla doğrulandı"
+benim_betik,5,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,6,skill_view search_files read_file terminal read_file search_files,21.1,0.003319,36098,/Users/user/hermes-seri/h6_olc/benim_betik_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Kapsam: Vadesi geçmiş ve ödenmemiş faturalar
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,6,0,0,0,0,0,0,0,1,1,0,0,xlsx,10,search_files terminal read_file terminal skill_view write_file terminal terminal write_file terminal,62.3,0.011965,98954,,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/tahsilat_raporu_2026-10-16.html
+Özet:
+- Rapor tarihi: 16.10.2026
+- Vadesi bugün olan fatura: 0
+- Bugün beklenen tahsilat: 0,00 ₺
+- Vadesi geçmiş ve ödenmemiş fatura: 67
+- Vadesi geçmiş toplam alacak: 8.071.788,25 ₺
+- Toplam bekleyen alacak: 11.681.754,25 ₺
+- Ödenmiş faturalar toplamı: 26.974.880,00 ₺
+Not: Veritabanında ödeme tarihi/tahsilat hareketi bulunmadığı için gerçekleşen “bugünkü tahsilat” ayrı olarak hesaplanamıyor; rapor vade ve ödeme durumuna göre hazırlanmıştır."
+prompt,6,1,1,1,1,1,1,1,1,8,1,0,,11,terminal search_files search_files terminal terminal terminal terminal read_file terminal terminal terminal,47.2,0.010138,107157,/Users/user/hermes-seri/h6_olc/prompt_6/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı ve doğrulandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri ve 67 vadesi geçmiş, ödenmemiş fatura dahil edildi. Tutar sıralaması, [ACİL] işaretleri ve KVKK kısıtları kontrol edildi."
+ajan1,6,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,7,skill_view terminal search_files terminal write_file read_file terminal,41.8,0.008572,59603,/Users/user/hermes-seri/h6_olc/ajan1_6/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri ve 67 ödenmemiş, vadesi geçmiş fatura dahil edildi. Veriler tutar sıralaması, vade filtresi, acil işaretleri ve hassas alanların dışlanması açısından doğrulandı."
+ajan2,6,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,7,skill_view terminal terminal terminal terminal read_file terminal,36.8,0.007161,63889,/Users/user/hermes-seri/h6_olc/ajan2_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Fatura sayısı: 67
+- Filtre: vadesi 2026-10-16’dan önce olan, ödenmemiş faturalar
+- Müşteri toplamları azalan sırada; acil işaretleri ve hassas alan kontrolleri doğrulandı."
+ajan3,6,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu:tahsilat-raporu tahsilat-raporu,12,skill_view skill_view terminal search_files terminal terminal terminal write_file read_file terminal terminal terminal,54.6,0.012895,141224,/Users/user/hermes-seri/h6_olc/ajan3_6/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş tutar: 8.071.788,25 TL
+31 müşteri grubu ve 67 gecikmiş/ödenmemiş fatura dahil edildi.
+Telefon ve vergi numarası bilgileri rapora eklenmedi."
+benim,6,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal terminal terminal terminal terminal write_file terminal,44.1,0.008199,72986,/Users/user/hermes-seri/h6_olc/benim_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+- 31 müşteri
+- 67 gecikmiş fatura
+- Ödenmiş ve vadesi gelmemiş faturalar hariç tutuldu
+- Telefon ve vergi numarası eklenmedi
+- Tutar ve satır toplamları doğrulandı"
+kotu_aciklama,6,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,6,skill_view search_files terminal terminal terminal terminal,43.3,0.004975,38336,/Users/user/hermes-seri/h6_olc/kotu_aciklama_6/calisma/raporlar/tahsilat_2026-10-16.md,"Tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 18 müşteri [ACİL] olarak işaretlendi
+- Telefon ve vergi bilgileri rapora dahil edilmedi
+- Toplam ve sıralama doğrulandı"
+benim_betik,6,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu finans/tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,21.2,0.003185,35773,/Users/user/hermes-seri/h6_olc/benim_betik_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Gecikmiş borcu olan müşteri: 31
+Rapor dosyası:
+ /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,7,0,0,0,0,0,0,0,1,1,0,0,,7,terminal read_file terminal terminal terminal write_file terminal,43.1,0.009977,95483,/Users/user/hermes-seri/h6_olc/yok_7/calisma/tahsilat_raporu_2026-10-16.md,"Tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/tahsilat_raporu_2026-10-16.md
+Özet:
+- Bugün vadeli açık fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş açık fatura: 67 adet / 8.071.788,25 TL
+- Önümüzdeki 7 günün tahsilat planı: 3 adet / 653.576,75 TL
+- Toplam açık alacak: 94 adet / 11.681.754,25 TL
+Not: Veritabanında ödeme tarihi alanı olmadığı için bugün fiilen yapılan tahsilat tutarı belirlenemiyor."
+prompt,7,1,1,1,1,1,1,1,1,8,1,0,,11,terminal search_files search_files terminal terminal terminal terminal terminal read_file write_file terminal,51.9,0.014962,178291,/Users/user/hermes-seri/h6_olc/prompt_7/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulama:
+- 31 müşteri, 67 vadesi geçmiş ve ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri toplamlarına göre azalan sıralama kontrol edildi
+- [ACİL] işaretleri 60 günden eski en erken vadeye göre uygulandı
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,7,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,10,skill_view terminal terminal terminal terminal read_file write_file read_file terminal terminal,52.0,0.012463,130235,/Users/user/hermes-seri/h6_olc/ajan1_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi.
+Doğrulandı: toplam tutar, müşteri/fatura sayıları, filtreler, sıralama ve hassas alanların dışarıda bırakılması."
+ajan2,7,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,5,skill_view terminal terminal read_file terminal,28.1,0.005598,42496,/Users/user/hermes-seri/h6_olc/ajan2_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+- 67 ödenmemiş ve vadesi geçmiş fatura
+- 31 müşteri
+- Tutarlar azalan sırada
+- 60 günden eski alacaklar “[ACİL]” olarak işaretlendi
+- Telefon ve vergi bilgileri rapora eklenmedi"
+ajan3,7,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,12,skill_view terminal search_files terminal terminal read_file write_file read_file terminal terminal terminal terminal,57.8,0.013349,151068,/Users/user/hermes-seri/h6_olc/ajan3_7/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulama:
+- 31 müşteri, 67 vadesi geçmiş ve ödenmemiş fatura
+- Toplam gecikmiş tutar: 8.071.788,25 TL
+- Tutarlar azalan sırada
+- [ACİL] kayıtları 60 günden eski vadeler için işaretlendi
+- Telefon ve vergi bilgileri rapora dahil edilmedi"
+benim,7,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,6,skill_view search_files terminal terminal terminal terminal,30.0,0.005072,46431,/Users/user/hermes-seri/h6_olc/benim_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş, ödenmemiş fatura sayısı: 67
+Ödenmiş faturalar ve vadesi gelmemiş faturalar rapora dahil edilmedi. Telefon ve vergi numarası eklenmedi."
+kotu_aciklama,7,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,8,skill_view terminal search_files search_files terminal terminal write_file terminal,42.0,0.008022,65084,/Users/user/hermes-seri/h6_olc/kotu_aciklama_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Kontroller:
+- 31 müşteri, 8.071.788,25 TL gecikmiş alacak
+- Tablo toplamı genel toplamla eşleşiyor
+- Tutar sıralaması doğru
+- 60 günden fazla geciken müşteriler `[ACİL]` olarak işaretlendi
+- Ödenmiş ve vadesi gelmemiş faturalar dahil edilmedi
+- Telefon ve vergi bilgileri rapora eklenmedi"
+benim_betik,7,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu finans/tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,20.5,0.003184,35789,/Users/user/hermes-seri/h6_olc/benim_betik_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Özet: 31 müşteri, toplam 8.071.788,25 TL gecikmiş alacak.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md"
+yok,8,0,0,0,0,0,0,0,1,1,0,0,,8,search_files terminal terminal terminal terminal terminal write_file terminal,43.3,0.011795,118346,,"Bugünün tahsilat raporu hazırlandı.
+Özet:
+- Bugün vadeli ve ödenmemiş fatura: 0 adet / 0,00 TL
+- Gecikmiş açık alacak: 67 adet / 8.071.788,25 TL
+- Toplam açık alacak: 94 adet / 11.681.754,25 TL
+- Önümüzdeki 7 gün içinde vadesi gelecek açık alacak: 3 adet / 653.576,75 TL
+Not: Veritabanında tahsilat tarihi veya tahsil edilen tutar alanı bulunmadığından, bugün gerçekleşen nakit tahsilat tutarı ayrı hesaplanamıyor. Rapor vade ve ödeme durumuna göre hazırlandı.
+Dosya:
+ /opt/data/calisma/tahsilat_raporu_2026-10-16.txt"
+prompt,8,1,1,1,1,1,1,1,1,8,1,0,,10,terminal search_files search_files terminal terminal terminal terminal search_files write_file terminal,50.5,0.016734,195189,/Users/user/hermes-seri/h6_olc/prompt_8/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı:
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Tutar sıralaması ve [ACİL] işaretleri uygulandı
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,8,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,14,skill_view terminal terminal terminal terminal write_file read_file terminal terminal terminal terminal terminal terminal terminal,66.1,0.016076,226965,/Users/user/hermes-seri/h6_olc/ajan1_8/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Doğrulandı: 67 fatura, 31 müşteri; toplamlar, vade/ödenmemiş koşulları ve sıralama doğru. Telefon ve vergi bilgileri rapora eklenmedi."
+ajan2,8,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,7,skill_view terminal search_files terminal terminal read_file terminal,28.7,0.00559,50351,/Users/user/hermes-seri/h6_olc/ajan2_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+- 67 gecikmiş, ödenmemiş fatura
+- 31 müşteri
+- Tutarlar azalan sırada
+- 60 günden eski alacaklar `[ACİL]` olarak işaretlendi
+- Telefon ve vergi bilgileri rapora eklenmedi
+Rapor doğrulandı."
+ajan3,8,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,9,skill_view terminal terminal terminal terminal terminal write_file read_file terminal,45.9,0.010222,89274,/Users/user/hermes-seri/h6_olc/ajan3_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş tutar: 8.071.788,25 TL
+Müşteri sayısı: 31
+Fatura sayısı: 67
+Rapor; vadesi 2026-10-16’dan önce olan ve ödenmemiş faturaları içeriyor, 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi. Toplam ve sıralama veritabanıyla doğrulandı."
+benim,8,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,9,skill_view terminal search_files terminal terminal terminal terminal write_file terminal,44.4,0.008408,77842,/Users/user/hermes-seri/h6_olc/benim_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 gecikmiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla gecikmiş müşteriler “[ACİL]” olarak işaretlendi
+- Ödenmiş ve vadesi gelmemiş faturalar dahil edilmedi
+- Telefon ve vergi numarası rapora eklenmedi"
+kotu_aciklama,8,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,8,skill_view terminal search_files terminal terminal terminal read_file terminal,32.9,0.006119,58032,/Users/user/hermes-seri/h6_olc/kotu_aciklama_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Gecikmiş fatura: 67
+- Müşteri: 31
+- Acil işaretli müşteri: 18
+Rapor, ödenmemiş ve vadesi 2026-10-16’dan önce olan faturaları içeriyor; toplam ve KVKK alanlarının dışarıda bırakıldığı doğrulandı."
+benim_betik,8,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,3,skill_view terminal read_file,19.2,0.002753,27060,/Users/user/hermes-seri/h6_olc/benim_betik_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+31 müşteri, toplam 8.071.788,25 TL gecikmiş alacak.
+Rapor dosyası:
+`/opt/data/calisma/raporlar/tahsilat_2026-10-16.md`
+60 günden eski vadeli müşteriler `[ACİL]` etiketiyle işaretlendi."
+yok,9,0,0,0,0,0,0,0,1,1,0,0,,5,terminal read_file terminal terminal write_file,34.7,0.007909,57168,/Users/user/hermes-seri/h6_olc/yok_9/calisma/tahsilat_raporu_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/tahsilat_raporu_2026-10-16.md
+Özet:
+- Bugün vadesi gelen açık fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş açık alacak: 67 adet / 8.071.788,25 TL
+- Toplam açık alacak: 94 adet / 11.681.754,25 TL
+- Önümüzdeki 7 gün vadeli alacak: 3 adet / 653.576,75 TL
+- En yüksek gecikmiş müşteri bakiyesi: Demir Lojistik — 598.313,75 TL
+Not: Veritabanında tahsilat tarihi bulunmadığından, bugün fiilen tahsil edilen tutar ayrı olarak belirlenemiyor."
+prompt,9,1,1,1,1,1,1,1,1,8,1,0,,7,search_files terminal terminal terminal terminal write_file terminal,44.2,0.009275,71302,/Users/user/hermes-seri/h6_olc/prompt_9/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulandı:
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteriler gecikmiş tutara göre azalan sıralı
+- 60 günden eski vadeler “[ACİL]” olarak işaretli
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,9,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,8,skill_view terminal terminal terminal terminal write_file read_file terminal,44.3,0.010255,86038,/Users/user/hermes-seri/h6_olc/ajan1_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi.
+Doğrulama başarılı:
+- Toplam tutar veritabanıyla eşleşiyor.
+- Faturalar doğru vade ve ödeme koşullarını sağlıyor.
+- Satırlar tutara göre azalan sıralı.
+- Telefon/vergi bilgileri rapora eklenmedi."
+ajan2,9,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,6,skill_view terminal terminal read_file terminal terminal,36.5,0.007055,64875,/Users/user/hermes-seri/h6_olc/ajan2_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 gecikmiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden eski alacaklar [ACİL] olarak işaretlendi
+- Telefon ve vergi bilgileri rapora dahil edilmedi"
+ajan3,9,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,9,skill_view terminal terminal terminal terminal read_file write_file read_file terminal,47.2,0.010303,86425,/Users/user/hermes-seri/h6_olc/ajan3_9/calisma/raporlar/tahsilat_2026-10-16.md,"Tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş ve ödenmemiş fatura: 67
+Rapor; vadesi geçmiş, ödenmemiş faturaları içeriyor, tutara göre azalan sıralı ve 60 günden eski kayıtlar “[ACİL]” olarak işaretlendi. Doğrulamalar tamamlandı."
+benim,9,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,8,skill_view terminal terminal terminal terminal terminal read_file terminal,39.5,0.006645,56727,/Users/user/hermes-seri/h6_olc/benim_9/calisma/raporlar/tahsilat_2026-10-16.md,"Tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Gecikmiş fatura: 67
+Müşteri: 31
+Kontrol edildi: yalnızca ödenmemiş ve vadesi geçmiş faturalar dahil edildi; tutar toplamı doğrulandı; telefon ve vergi numarası rapora alınmadı."
+kotu_aciklama,9,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu,9,skill_view terminal terminal search_files terminal terminal write_file read_file terminal,41.7,0.008296,75282,/Users/user/hermes-seri/h6_olc/kotu_aciklama_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Acil işaretlenen müşteri sayısı: 18
+Rapor yalnızca ödenmemiş ve vadesi geçmiş faturaları içeriyor; telefon ve vergi numarası eklenmedi."
+benim_betik,9,1,1,1,1,1,1,1,1,8,1,1,finans:tahsilat-raporu finans:tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,19.7,0.003199,35810,/Users/user/hermes-seri/h6_olc/benim_betik_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Rapor dosyası:
+`/opt/data/calisma/raporlar/tahsilat_2026-10-16.md`"
+yok,10,0,0,0,0,0,0,0,1,1,0,0,,9,terminal search_files terminal terminal terminal terminal terminal terminal write_file,49.1,0.008286,74351,,"Bugünün tahsilat raporu hazırlandı.
+Özet:
+- Rapor tarihi: 16.10.2026
+- Toplam fatura: 326 adet / 38.656.634,25 TL
+- Tahsil edilmiş: 232 adet / 26.974.880,00 TL
+- Açık bakiye: 94 adet / 11.681.754,25 TL
+- Gecikmiş açık bakiye: 67 adet / 8.071.788,25 TL
+- Bugün vadeli fatura: bulunmuyor; bugünkü vade toplamı 0,00 TL
+Veritabanında tahsilat tarihi alanı bulunmadığından, bugün gerçekleşen tahsilatlar ayrı olarak belirlenemiyor; rapor vade ve odendi durumuna göre hazırlandı.
+Dosya: /opt/data/calisma/tahsilat_raporu_2026-10-16.txt"
+prompt,10,1,1,1,1,1,1,1,1,8,1,0,,9,search_files terminal terminal terminal terminal terminal terminal terminal terminal,48.1,0.009731,98559,/Users/user/hermes-seri/h6_olc/prompt_10/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Doğrulama:
+- 31 müşteri satırı
+- 67 vadesi geçmiş ve ödenmemiş fatura
+- Toplam: 8.071.788,25 TL
+- Gecikmiş tutara göre azalan sıralama uygulandı
+- 60 günden eski vadeler [ACİL] olarak işaretlendi
+- Telefon ve vergi numarası rapora eklenmedi"
+ajan1,10,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,7,skill_view terminal terminal terminal write_file read_file terminal,42.5,0.009599,81977,/Users/user/hermes-seri/h6_olc/ajan1_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi. Tutar sıralaması ve hassas alanların dışarıda bırakılması doğrulandı."
+ajan2,10,1,1,1,1,1,1,1,1,8,1,1,tahsilat-raporu,6,skill_view terminal search_files terminal read_file terminal,29.4,0.005558,42238,/Users/user/hermes-seri/h6_olc/ajan2_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+- 67 gecikmiş fatura
+- 31 müşteri
+- Ödenmiş ve vadesi bugün olan faturalar dahil edilmedi
+- Tutar sıralaması, acil işaretleri ve hassas alanların hariç tutulması doğrulandı"
+ajan3,10,1,0,1,1,1,1,1,1,7,0,1,tahsilat-raporu,9,skill_view terminal search_files terminal terminal terminal write_file read_file terminal,42.9,0.010053,83624,/Users/user/hermes-seri/h6_olc/ajan3_10/calisma/raporlar/tahsilat_2026-10-16.md,"Günlük tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş ve ödenmemiş tutar: 8.071.788,25 TL
+- 31 müşteri
+- 67 fatura
+- Tutarlar azalan sırada
+- Telefon ve vergi bilgileri rapora dahil edilmedi
+- Veriler yalnızca vadesi geçmiş ve ödenmemiş faturalardan oluşturuldu"
+benim,10,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,9,skill_view terminal terminal terminal terminal terminal write_file read_file terminal,48.4,0.008532,73807,/Users/user/hermes-seri/h6_olc/benim_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Ödenmemiş, vadesi geçmiş fatura sayısı: 67
+Kontroller tamamlandı:
+- Rapor toplamı veritabanı toplamıyla eşleşiyor.
+- Tablo satırlarının toplamı doğru.
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi.
+- Telefon ve vergi numarası rapora eklenmedi."
+kotu_aciklama,10,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu,7,skill_view terminal terminal terminal terminal write_file terminal,38.5,0.007577,64831,/Users/user/hermes-seri/h6_olc/kotu_aciklama_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+60 günden fazla gecikmiş müşteri: 18
+Kontroller tamamlandı: tutarlar veritabanıyla eşleşiyor, sıralama doğru ve raporda telefon/vergi bilgisi bulunmuyor."
+benim_betik,10,1,1,1,1,1,1,1,1,8,1,1,finans/tahsilat-raporu finans/tahsilat-raporu,5,skill_view search_files skill_view terminal read_file,19.1,0.003196,35813,/Users/user/hermes-seri/h6_olc/benim_betik_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Borçlu müşteri sayısı: 31
+Rapor dosyası:
+`/opt/data/calisma/raporlar/tahsilat_2026-10-16.md`"
+kotu_ad,1,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view search_files terminal terminal terminal terminal read_file terminal,44.3,0.00634,60077,/Users/user/hermes-seri/h6_olc/kotu_ad_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Rapor yalnızca ödenmemiş ve vadesi geçmiş faturaları içeriyor; telefon ve vergi numarası eklenmedi."
+kotu_ad,2,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skill_view terminal terminal terminal terminal read_file terminal,39.8,0.006259,60222,/Users/user/hermes-seri/h6_olc/kotu_ad_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Rapor yalnızca ödenmemiş ve vadesi geçmiş faturaları içeriyor; telefon ve vergi numarası eklenmedi."
+kotu_ad,3,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,6,skill_view terminal terminal terminal write_file terminal,44.3,0.007461,64039,/Users/user/hermes-seri/h6_olc/kotu_ad_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi
+- Rapor tutarı veritabanıyla doğrulandı
+- Telefon ve vergi bilgileri rapora eklenmedi"
+kotu_ad,4,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,9,skill_view terminal terminal terminal terminal terminal write_file terminal terminal,53.2,0.009058,85899,/Users/user/hermes-seri/h6_olc/kotu_ad_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri: 31
+Gecikmiş fatura: 67
+Rapor; ödenmemiş ve vadesi geçmiş faturaları içeriyor, tutara göre sıralanıyor ve 60 günden fazla gecikmiş müşteriler “[ACİL]” olarak işaretleniyor."
+kotu_ad,5,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,10,skill_view terminal terminal search_files terminal terminal terminal write_file terminal terminal,52.9,0.00891,85756,/Users/user/hermes-seri/h6_olc/kotu_ad_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Acil müşteriler: 18
+Kontrol edildi: Veriler tutarla ve sıralamayla eşleşiyor; ödenmiş faturalar, vadesi gelmemiş faturalar, telefon ve vergi numaraları rapora dahil edilmedi."
+kotu_ad,6,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skill_view search_files terminal terminal terminal write_file terminal,43.8,0.007496,64196,/Users/user/hermes-seri/h6_olc/kotu_ad_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL  
+Müşteri sayısı: 31
+Kontroller tamamlandı: toplam veritabanıyla eşleşiyor, tutarlar azalan sırada ve telefon/vergi bilgileri rapora dahil edilmedi."
+kotu_ad,7,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,9,skill_view terminal terminal terminal terminal terminal write_file read_file terminal,50.9,0.008519,74282,/Users/user/hermes-seri/h6_olc/kotu_ad_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 gecikmiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- [ACİL] olarak işaretlenen müşteriler: vadesi 60 günden fazla gecikmiş olanlar
+Kontroller tamamlandı: rapor toplamı veritabanıyla eşleşiyor, satırlar tutara göre sıralı ve ödenmiş/vadesi gelmemiş faturalar dahil edilmedi."
+kotu_ad,8,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,10,skill_view terminal terminal terminal terminal terminal write_file terminal terminal terminal,55.3,0.009962,101710,/Users/user/hermes-seri/h6_olc/kotu_ad_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri: 31
+Fatura: 67
+Acil müşteri: 18
+Kontrol edildi: toplam tutar veritabanıyla eşleşiyor, sıralama doğru, yalnızca ödenmemiş ve vadesi geçmiş faturalar dahil edildi; telefon ve vergi bilgileri rapora eklenmedi."
+kotu_ad,9,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view search_files terminal terminal terminal terminal read_file terminal,30.8,0.005911,50814,/Users/user/hermes-seri/h6_olc/kotu_ad_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Gecikmiş fatura sayısı: 67
+- `[ACİL]` müşteri sayısı: 18
+Rapor; ödenmemiş, vadesi 2026-10-16’dan önce olan faturaları içeriyor ve telefon/vergi numarası bilgilerini içermiyor."
+kotu_ad,10,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,9,skill_view terminal terminal terminal terminal terminal write_file terminal terminal,47.8,0.008593,84930,/Users/user/hermes-seri/h6_olc/kotu_ad_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Gecikmiş müşteri sayısı: 31
+- Gecikmiş fatura sayısı: 67
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Tutarlar büyükten küçüğe sıralandı.
+- 60 günden fazla gecikmiş müşteriler “[ACİL]” olarak işaretlendi.
+- Telefon ve vergi numarası rapora dahil edilmedi."
+kalabalik_kotu,1,1,0,0,0,0,0,0,1,2,0,0,finans:kasa-rapor,9,skill_view search_files terminal read_file search_files terminal terminal write_file terminal,62.0,0.010202,102399,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_1/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Vadesi geçmiş açık alacak: 67 fatura, 8.071.788,25 TL
+- Bugün vadeli ödenmemiş fatura: 0
+- Toplam açık alacak: 94 fatura, 11.681.754,25 TL
+- 90+ gün gecikmiş alacak: 25 fatura, 3.309.749,50 TL"
+kalabalik_kotu,2,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skills_list skill_view terminal search_files terminal terminal terminal,48.6,0.005943,58740,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_2/calisma/raporlar/tahsilat_2026-10-16.md,"Tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Gecikmiş fatura sayısı: 67
+- `[ACİL]`: 60 günden fazla gecikmiş müşteriler işaretlendi.
+- Ödenmiş veya vadesi gelmemiş faturalar rapora dahil edilmedi."
+kalabalik_kotu,3,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skill_view terminal search_files terminal terminal read_file terminal,47.7,0.005332,47237,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler `[ACİL]` olarak işaretlendi
+- Ödenmiş ve vadesi gelmemiş faturalar dahil edilmedi."
+kalabalik_kotu,4,1,0,1,0,1,1,0,1,5,0,0,finans:kasa-rapor,11,skill_view search_files search_files search_files terminal terminal terminal terminal terminal terminal read_file,66.2,0.024192,300132,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam fatura: 326 adet / 38.656.634,25 TL
+- Ödenmiş: 232 adet / 26.974.880,00 TL
+- Ödenmemiş: 94 adet / 11.681.754,25 TL
+- Bugün vadeli fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş, ödenmemiş: 67 adet / 8.071.788,25 TL
+Not: Veritabanında tahsilat tarihi bulunmadığı için bugün gerçekleşen tahsilat tutarı kesin olarak ayrıştırılamıyor; rapor vade ve odendi alanlarına göre hazırlandı."
+kalabalik_kotu,5,1,1,1,1,1,1,1,1,8,1,1,finans:kasa-rapor finans:finans-rapor,11,skill_view skill_view search_files terminal terminal terminal terminal terminal write_file read_file terminal,58.9,0.008557,77056,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Gecikmiş fatura sayısı: 67
+- “[ACİL]” işaretli müşteri: vadesi 60 günden fazla gecikenler
+Rapor, ödenmemiş ve vadesi geçmiş faturalarla doğrulandı."
+kalabalik_kotu,6,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,11,skill_view terminal terminal terminal terminal terminal write_file read_file terminal terminal terminal,67.3,0.010882,112445,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 31 müşteri
+- 67 gecikmiş fatura
+- Ödenmiş veya vadesi gelmemiş faturalar rapora dahil edilmedi
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi"
+kalabalik_kotu,7,1,0,0,0,0,0,0,1,2,0,0,finans:kasa-rapor,14,skill_view terminal search_files search_files terminal terminal terminal terminal terminal write_file terminal patch patch terminal,72.2,0.019264,323884,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Bugün vadesi gelen fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş açık alacak: 67 adet / 8.071.788,25 TL
+- Toplam açık alacak: 94 adet / 11.681.754,25 TL
+Not: Veritabanında ödeme tarihi bulunmadığı için bugün fiilen tahsil edilen tutar belirlenemiyor."
+kalabalik_kotu,8,1,0,1,1,1,0,0,1,5,0,0,finans:kasa-rapor,12,skill_view search_files terminal search_files terminal terminal terminal terminal write_file terminal patch terminal,78.1,0.012714,133402,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı ve doğrulandı.
+Dosya:
+ /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Öne çıkanlar:
+- Bugün vadesi gelen: 0 fatura / 0,00 TL
+- Vadesi geçmiş açık bakiye: 67 fatura / 8.071.788,25 TL
+- Toplam açık bakiye: 94 fatura / 11.681.754,25 TL
+- Vadesi geçmiş tahsil edilmiş: 209 fatura / 23.923.587,00 TL
+Not: Veritabanında ödeme tarihi bulunmadığı için fiilen bugün yapılan tahsilatlar ayrı hesaplanamıyor; rapor vade tarihi ve “odendi” alanına göre hazırlanmıştır."
+kalabalik_kotu,9,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skill_view search_files terminal terminal terminal write_file terminal,39.0,0.007391,57464,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_9/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Veriler gecikmiş ve ödenmemiş faturalarla sınırlandı
+- Tutar sıralaması ve [ACİL] işaretleri doğrulandı
+- Telefon ve vergi numaraları rapora dahil edilmedi"
+kalabalik_kotu,10,1,0,0,0,0,0,0,1,2,0,0,finans:kasa-rapor,11,skill_view search_files terminal terminal terminal terminal terminal terminal read_file terminal terminal,51.2,0.020021,277660,/Users/user/hermes-seri/h6_olc/kalabalik_kotu_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Bugün vadesi gelen fatura: 0 adet / 0,00 TL
+- Vadesi geçmiş açık alacak: 67 adet / 8.071.788,25 TL
+- Toplam açık alacak: 94 adet / 11.681.754,25 TL
+Not: Veritabanında tahsilat tarihi alanı bulunmadığı için bugün tahsil edilen tutar ayrı olarak doğrulanamıyor; rapor vade tarihi ve ödeme durumuna göre hazırlandı."
+kalabalik_iyi,1,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view terminal search_files terminal terminal terminal read_file terminal,51.1,0.005944,57144,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_1/calisma/raporlar/tahsilat_2026-10-16.md,"Tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- Müşteri sayısı: 31
+- Ödenmemiş ve vadesi geçmiş fatura: 67
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi.
+- Tutarlar büyükten küçüğe sıralandı.
+- Telefon ve vergi numarası rapora dahil edilmedi."
+kalabalik_iyi,2,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,7,skill_view terminal terminal terminal terminal write_file terminal,64.2,0.00808,75163,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_2/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Kontrol edildi: Raporda yalnızca ödenmemiş ve vadesi geçmiş faturalar bulunuyor; toplam tutar ve acil işaretlemeleri doğrulandı."
+kalabalik_iyi,3,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view terminal search_files terminal terminal terminal terminal write_file,58.7,0.007476,68550,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_3/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi
+- Ödenmiş veya vadesi gelmemiş faturalar dahil edilmedi"
+kalabalik_iyi,4,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,5,skill_view terminal terminal terminal read_file,47.2,0.005616,51519,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_4/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Rapor yalnızca ödenmemiş ve vadesi geçmiş faturaları içeriyor; tutarlar müşteri bazında sıralandı ve 60 günden eski alacaklar “[ACİL]” olarak işaretlendi."
+kalabalik_iyi,5,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,9,skill_view terminal terminal terminal terminal write_file terminal terminal terminal,65.4,0.009743,95719,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_5/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı.
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Rapor; ödenmemiş ve vadesi geçmiş faturaları içeriyor, tutara göre sıralandı ve 60 günden fazla geciken müşteriler “[ACİL]” olarak işaretlendi. DB sorgusuyla doğrulandı."
+kalabalik_iyi,6,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view terminal terminal terminal terminal terminal write_file terminal,63.3,0.007942,65615,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_6/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi. Rapor doğrulandı."
+kalabalik_iyi,7,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,10,skill_view terminal terminal terminal terminal read_file terminal terminal terminal terminal,62.1,0.009168,96348,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_7/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Kontroller tamamlandı:
+- Tablodaki tutarlar toplamla eşleşiyor.
+- Veriler ödenmemiş ve vadesi geçmiş faturalarla sınırlı.
+- Tutar sıralaması doğru.
+- 60 günden fazla gecikenler “[ACİL]” olarak işaretlendi.
+- Telefon ve vergi numarası rapora eklenmedi."
+kalabalik_iyi,8,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,9,skill_view terminal search_files terminal terminal terminal terminal read_file terminal,47.8,0.005472,49263,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_8/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Özet:
+- 31 müşteri
+- 67 vadesi geçmiş, ödenmemiş fatura
+- Toplam gecikmiş alacak: 8.071.788,25 TL
+- 60 günden fazla geciken müşteriler `[ACİL]` olarak işaretlendi.
+- Ödenmiş ve vadesi gelmemiş faturalar rapora dahil edilmedi."
+kalabalik_iyi,9,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view terminal terminal terminal terminal terminal write_file terminal,48.8,0.009356,81829,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_9/calisma/raporlar/tahsilat_2026-10-16.md,"Rapor hazırlandı:
+/opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+31 müşteri, 67 ödenmemiş ve vadesi geçmiş fatura dahil edildi.
+Kontroller tamamlandı:
+- Rapor toplamı veritabanı toplamıyla eşleşiyor.
+- Ödenmiş veya vadesi gelmemiş faturalar dahil edilmedi.
+- KVKK kapsamında telefon ve vergi numarası eklenmedi."
+kalabalik_iyi,10,1,1,1,1,1,1,1,1,8,1,1,finans-rapor,8,skill_view terminal terminal terminal terminal terminal write_file terminal,45.7,0.007673,70931,/Users/user/hermes-seri/h6_olc/kalabalik_iyi_10/calisma/raporlar/tahsilat_2026-10-16.md,"Bugünün tahsilat raporu hazırlandı:
+Dosya: /opt/data/calisma/raporlar/tahsilat_2026-10-16.md
+Toplam gecikmiş alacak: 8.071.788,25 TL
+Müşteri sayısı: 31
+Gecikmiş fatura sayısı: 67
+Rapor; yalnızca ödenmemiş ve vadesi geçmiş faturaları içeriyor, tutarlar azalan sırada ve 60 günden eski vadeler [ACİL] olarak işaretlendi."

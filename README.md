@@ -11,8 +11,9 @@ ve `gpt-5.6-luna` modeliyle şirket içi bir asistan kuruluyor. Her adım ölç�
 | 3. Doküman asistanı | [Şirket Dokümanı Asistanı, 8/48'den 48/48'e](https://youtu.be/cG9aiFS37x8) | `bolum3/` |
 | 4. Telegram'da canlı | [Telegram'dan "Sil" Dedim, Onay Sormadı](https://youtu.be/lopXOY_Vqvk) | `bolum4/` |
 | 5. Kendi MCP sunucun | [Agent'a SQL Verdim, Faturaları Kendi Kapattı](https://youtu.be/Guu4fbOyc7I) | `h5/` |
+| 6. SKILL.md anatomisi | [3'te 2: Agent Skill'i Yanlış Yere Kaydetti](https://youtu.be/LBOoQPCtW48) | `h6/` |
 
-1-4. bölümlerin sayıları `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe. 5. bölümün sonuçları `h5/SONUC.md`, ham veriler `h5/veri/`.
+1-4. bölümlerin sayıları `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe. 5. bölümün sonuçları `h5/SONUC.md`, ham veriler `h5/veri/`. 6. bölümün sonuçları `h6/SONUC.md`, ham veriler `h6/veri/`.
 
 ## Klasörler
 
@@ -32,6 +33,13 @@ h5/      erp_sunucu.py       ERP MCP sunucusu, dört araç tasarımı: sql, sql_
          canli_soru.py       Hermes'e tek soru sorar, sunucunun gördüğü araç çağrılarını canlı yazar
          veri_uret.py, soru_uret.py   Örnek veritabanı (40 müşteri, 326 fatura) ve 20 soru + beklenen cevaplar
          olc.py, ozet.py     Ölçüm ve özet (elle_duzeltme.json: elle okunup düzeltilen 11 puan)
+h6/      skills/             Ölçülen skill'ler, düzen başına bir klasör (benim, benim_betik, ajan1-3, kotu_*, kalabalik_*)
+         canli.py            Temiz Hermes'e betikli skill'i koyup kısa isteği verir; çağrıları ve raporu yazar
+         olc.py, kontrol.py  110 çalıştırma ve 8 ölçütlü puanlama (beklenen.py: değerler veritabanından)
+         ajan_skill_uret.py  Ajana kuralları anlatıp "skill olarak kaydet" dedirten 3 oturum
+                             (ajan_uretim.json'daki maliyet Hermes'in tahmini; doğrusu SONUC.md'de)
+         Veritabanı: python3 ../h5/veri_uret.py && cp ../h5/sirket.db .   (H5 ile aynı, birebir)
+         Canlı çalıştırma: H6_DENEY=$PWD python3 canli.py
 olcum/   *_olc.py            Ölçüm betikleri (her bölüm için)
          sahte_telegram.py   Ölçümde kullanılan sahte Telegram Bot API sunucusu
          b4_vekil.py         Hermes'e sahte anahtar verip gerçeğini yalnızca vekilde tutan vekil
