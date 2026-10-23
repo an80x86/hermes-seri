@@ -12,8 +12,9 @@ ve `gpt-5.6-luna` modeliyle şirket içi bir asistan kuruluyor. Her adım ölç�
 | 4. Telegram'da canlı | [Telegram'dan "Sil" Dedim, Onay Sormadı](https://youtu.be/lopXOY_Vqvk) | `bolum4/` |
 | 5. Kendi MCP sunucun | [Agent'a SQL Verdim, Faturaları Kendi Kapattı](https://youtu.be/Guu4fbOyc7I) | `h5/` |
 | 6. SKILL.md anatomisi | [3'te 2: Agent Skill'i Yanlış Yere Kaydetti](https://youtu.be/LBOoQPCtW48) | `h6/` |
+| 14. Kimlik, yetki ve denetim | 9'da 9: 'Onayladı' Yazdı, Agent Erişimi Açtı (30 Ekim) | `h14/` |
 
-1-4. bölümlerin sayıları `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe. 5. bölümün sonuçları `h5/SONUC.md`, ham veriler `h5/veri/`. 6. bölümün sonuçları `h6/SONUC.md`, ham veriler `h6/veri/`.
+1-4. bölümlerin sayıları `olcum/OLCUMLER.md` dosyasında, ham veriler `olcum/veri/` klasöründe. 5. bölümün sonuçları `h5/SONUC.md`, ham veriler `h5/veri/`. 6. bölümün sonuçları `h6/SONUC.md`, ham veriler `h6/veri/`. 14. bölümün sonuçları `h14/SONUC.md`, ham veriler aynı klasörde (`olcum.csv`, `log_a.txt`, `denetim_b.jsonl`).
 
 ## Klasörler
 
@@ -40,6 +41,12 @@ h6/      skills/             Ölçülen skill'ler, düzen başına bir klasör (
                              (ajan_uretim.json'daki maliyet Hermes'in tahmini; doğrusu SONUC.md'de)
          Veritabanı: python3 ../h5/veri_uret.py && cp ../h5/sirket.db .   (H5 ile aynı, birebir)
          Canlı çalıştırma: H6_DENEY=$PWD python3 canli.py
+h14/     yardim_sunucu.py    BT yardım masası MCP sunucusu: a (servis hesabı) / b (X-Jeton kimliği + politika + zincirli denetim)
+         istekler.json       17 istek ve iki SOUL metni; jetonlar.json: test jetonları (gerçek kimlik bilgisi değil)
+         olc.py              4 düzen × 17 istek × 3 tekrar = 204 çalıştırma (sunucular: python yardim_sunucu.py a 8021 / b 8022)
+         denetim_dogrula.py  Zinciri doğrular; --kurcala bir satırı değiştirip siler, ikisi de yakalanmalı
+         canli.py            Temiz Hermes'e tek mesaj (B sunucusu), cevabı ve denetim kaydının son satırını yazar
+                             Önce: python3 canli_hazirla.py (Hermes taban klasörü 2. bölümdeki b2taban'dan)
 olcum/   *_olc.py            Ölçüm betikleri (her bölüm için)
          sahte_telegram.py   Ölçümde kullanılan sahte Telegram Bot API sunucusu
          b4_vekil.py         Hermes'e sahte anahtar verip gerçeğini yalnızca vekilde tutan vekil

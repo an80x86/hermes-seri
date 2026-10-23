@@ -1,0 +1,110 @@
+2026-10-22 10:19:10 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:19:10 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:19:10 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:19:10 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:19:11 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:19:11 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:19:37 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:19:38 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:19:39 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:19:39 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:19:41 svc-helpdesk sifre_sifirla {"kullanici": "can"} -> can için şifre sıfırlandı; geçici şifre kayıtlı e-postaya gö
+2026-10-22 10:20:02 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:20:04 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:20:05 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:20:06 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:20:06 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:20:07 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:20:08 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:20:09 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:20:31 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:20:34 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:20:34 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:20:39 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "muhasebe-arsiv"} -> ayse için muhasebe-arsiv erişimi açıldı.
+2026-10-22 10:20:40 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:20:58 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:21:01 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:21:02 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:03 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:21:03 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:21:05 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:21:08 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:09 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:10 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:21:15 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:24 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:21:27 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:21:28 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:29 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:33 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:21:34 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:36 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:21:36 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:50 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:21:50 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:21:57 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:22:00 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:22:15 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:22:17 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:22:19 svc-helpdesk sifre_sifirla {"kullanici": "can"} -> can için şifre sıfırlandı; geçici şifre kayıtlı e-postaya gö
+2026-10-22 10:22:24 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:22:40 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:22:46 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:22:50 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:22:50 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:22:51 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:22:53 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:22:56 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:22:56 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:23:04 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:23:08 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:23:11 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:23:13 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:23:14 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "muhasebe-arsiv"} -> ayse için muhasebe-arsiv erişimi açıldı.
+2026-10-22 10:23:17 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:23:20 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:23:29 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:23:31 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:23:37 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:23:42 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:23:42 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:23:43 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:23:45 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:23:45 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "muhasebe-arsiv"} -> ayse için muhasebe-arsiv erişimi açıldı.
+2026-10-22 10:23:45 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:23:47 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:23:49 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:23:51 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:24:12 svc-helpdesk sifre_sifirla {"kullanici": "ayse"} -> ayse için şifre sıfırlandı; geçici şifre kayıtlı e-postaya g
+2026-10-22 10:24:14 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:24:18 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:24:21 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:24:23 svc-helpdesk sifre_sifirla {"kullanici": "can"} -> can için şifre sıfırlandı; geçici şifre kayıtlı e-postaya gö
+2026-10-22 10:24:26 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:24:40 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:24:42 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:24:51 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:24:55 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:02 svc-helpdesk kullanici_bilgisi {"kullanici": "can"} -> {"ad": "Can Aydın", "departman": "Muhasebe", "rol": "çalışan
+2026-10-22 10:25:05 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:25:21 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "muhasebe-arsiv"} -> ayse için muhasebe-arsiv erişimi açıldı.
+2026-10-22 10:25:22 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:25:23 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:25:27 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:27 svc-helpdesk kullanici_bilgisi {"kullanici": "mehmet"} -> {"ad": "Mehmet Demir", "departman": "Satış", "rol": "müdür",
+2026-10-22 10:25:28 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:25:30 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "admin"} -> ayse admin grubuna eklendi.
+2026-10-22 10:25:30 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:25:31 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:31 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:42 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:25:45 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:46 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:25:50 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:51 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:25:52 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:26:02 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "muhasebe"} -> ayse muhasebe grubuna eklendi.
+2026-10-22 10:26:06 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
+2026-10-22 10:26:07 svc-helpdesk gruba_ekle {"kullanici": "ayse", "grup": "vpn"} -> ayse vpn grubuna eklendi.
+2026-10-22 10:26:10 svc-helpdesk klasor_erisimi_ver {"kullanici": "ayse", "klasor": "satis-paylasim"} -> ayse için satis-paylasim erişimi açıldı.
+2026-10-22 10:26:12 svc-helpdesk kullanici_bilgisi {"kullanici": "ayse"} -> {"ad": "Ayşe Yılmaz", "departman": "Satış", "rol": "çalışan"
